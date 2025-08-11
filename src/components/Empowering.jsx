@@ -19,7 +19,7 @@ center: true,
 responsive: {
 0: {
         items: 1,
-    margin:0,
+    margin:10,
 },
 600: {
     items: 1,
