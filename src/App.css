@@ -1,0 +1,275 @@
+:root{
+
+  
+@import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
+    --roboto: 'Roboto', sans-serif;    
+    --opensans: 'Open Sans', sans-serif;
+    --primay: #525fe2;
+    --secondary: #ff6c4e;
+    --white: #ffffff;
+    --black: #000000;
+    --text-color: #121212;
+    --border-radius: 4px;
+    --gray1: #a6a6a6;
+    --gray2: #4e4e4e;
+    --gray3: #272727;
+  
+}
+/* @font-face {
+  font-family: 'Roboto';
+  font-style: NORMAL_OR_ITALIC;
+  font-weight: NUMERIC_WEIGHT_VALUE;
+  src: url(FONT_FILE_NAME.woff2) format('woff2');
+} */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--roboto);
+}
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* header css */
+
+.main-navbar ul li a{
+  color: #a6a6a6;
+  font-weight: 500;
+  font-size: 14px;
+}
+#mainNavbar ul li .active{
+  color: var(--primay);
+  font-weight: 500;
+
+}
+.nav-btn-style{
+  border:1px solid var(--secondary);
+  color: var(--secondary);
+  font-weight: 500;
+}
+.nav-btn-style2{
+  border:1px solid var(--secondary);
+  background-color: var(--secondary);
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+
+
+.banner-bg {
+  width: 100%;
+  /* height: auto; */
+  /* height: 70vh; */
+  height: auto;
+  top: 0;
+  display: flex;
+  align-items: center;
+  /* background-color: gray; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-content{
+  padding: 40px 0;
+}
+@media (min-width:992px){
+  .hero-content{
+  padding: 100px 0;
+}
+}
+
+.hero-title{
+  /* font-size: 62px; */
+  color: var(--white);
+  font-weight: 600;
+}
+@media screen and (min-width: 992px) {
+  .hero-title {
+    font-size: 62px;
+  }
+  .hero-title{
+  font-size: 62px;
+ 
+}
+  
+}
+
+.hero-text{
+  font-size: 18px;
+  color: var(--white);
+  /* font-weight: 200; */
+  line-height: 1.5;
+}
+
+.pill-button {
+  display: inline-block;
+  padding: 3px 24px;
+  border: 1px solid white;
+  border-radius: 50px; /* fully rounded */
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  background: transparent;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.pill-button strong {
+  font-weight: 700;
+  font-size: 22px;
+  display: block;
+  line-height: 1.2;
+}
+
+.hero-btns, .rounded-buttons {
+  display: flex;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .hero-btns, .rounded-buttons {
+    flex-direction: column;
+  }
+}
+
+.nav-btn-style2:hover {
+    border-color: var(--primay);
+}
+.nav-btn-style:hover {
+    border-color: var(--primay);
+    background-color: var(--primay);
+    color: #fff;
+}
+
+
+/* **********owl-slider********** */
+#hero-slider  .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+  background: var(--secondary)
+}
+
+/* *********secton 2******** */
+.button-container {
+  background-color: #5867dd; /* Blue background */
+  padding: 12px;
+  border-radius: 8px;
+  display: inline-flex;
+  gap: 10px;
+  /* width: 90%; */
+}
+
+.btn-custom {
+ color: var(--white);
+  border-radius: 8px;
+  padding: 4px 16px;
+  font-size: 14px;
+  font-weight: 500;
+border:1px solid #ffffff;
+}
+.btn-custom-white{
+   color: var(--primay);
+  border:1px solid #ffffff;
+    border-radius: 8px;
+  padding: 4px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: white;
+}
+
+/* --------medical-borard-section---- */
+.cutom-tab-style {
+    padding:10px 15px;
+    /* margin: 10px; */
+    
+}
+.lightBg{
+  background-color: #eeeef1;
+  color: #626366;
+}
+
+.medical-tab-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding:0;
+  /* overflow-x: scroll; */
+  /* gap: 20px;
+  display: grid;
+grid-template-columns:  repeat(6, 1fr) ;
+overflow-x: scroll; */
+}
+
+.activeTab{
+  background-color: #7680e7;
+  color: white;
+}
+.cutom-tab-style{
+  border-radius: 40px;
+  border: 1px solid transparent;
+}
+
+
+
+
+
+/* .btn-primary {
+    background: #f97316;
+    color: white;
+}
+
+.btn-outline {
+    border: 1px solid #f97316;
+    color: #f97316;
+    background: transparent;
+} */
+
+.cardiology-card{
+  padding: 10px;
+  background-color: #e6e8fc;
+  border-radius: 10px;
+
+}
+
+.common-btn-dark{
+   text-align: center;
+    padding:  8px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    flex: 1;
+    background: #f86f03;
+}
+.common-btn-outline {
+  color:#f86f03;
+  border: 1px solid #f86f03;
+   text-align: center;
+    padding:  8px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    flex: 1;
+    /* background: var(--white); */
+}
+
+
+.stats-card3{
+  background-color: #47b34e;
+  color: var(--white);
+}
+.stats-card2{
+  background-color: #1d8a8f;
+  color: var(--white);
+}
+.stats-card1{
+  background-color: #fea500;
+  color: var(--white);
+}
+.stats-card img{
+  max-width: 100px;
+}
