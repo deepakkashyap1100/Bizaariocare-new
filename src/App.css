@@ -159,9 +159,6 @@ div#navbarNav ul li {
   font-weight: 600;
 }
 @media screen and (min-width: 992px) {
-  nav#mainNavbar .container {
-    padding-bottom: 30px;
-}
   .hero-title{
   font-size: 48px;
   color: var(--white);
