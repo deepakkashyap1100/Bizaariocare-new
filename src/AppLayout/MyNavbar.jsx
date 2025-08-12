@@ -63,7 +63,7 @@ function Navbar() {
           </ul>
 
           {/* Right buttons */}
-          <div className="d-flex align-items-center gap-2">
+          <div className="d-flex align-items-center gap-2 mb-lg-0 mb-3">
             {/* Language Selector */}
             <div className="dropdown ">
               <button
