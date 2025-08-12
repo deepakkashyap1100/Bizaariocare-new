@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; 
-import langIcon from '../assets/images/icons/language.png';
+import langIcon from '../assets/images/icons/language.svg';
 import Logo from '../assets/images/logo1.png'; 
 //  import home from '../assets/css/home..module.css'; 
 
 function Navbar() {
+  const [scrollDown, setScrollDown]= useState(false);
+
+  window.onscroll = function() {
+    if (this.scrollY > 10) {
+        setScrollDown(true);
+    } else{
+      setScrollDown(false);
+    }
+};
   return (
     <>
-    <nav className="navbar navbar-expand-xl navbar-light bg-white shadow-sm py-3 main-navbar" id='mainNavbar'>
+      <nav className={`navbar navbar-expand-xl navbar-light bg-white shadow-sm  main-navbar ${scrollDown==true?'headerfix': ''}`  } id='mainNavbar'>
       <div className="container">
         
         {/* Logo */}
@@ -63,7 +72,7 @@ function Navbar() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <img src={langIcon} alt="" /> English
+                <img src={langIcon} alt="" className='me-2' /> English
               </button>
               <ul className="dropdown-menu ">
                 <li><a className="dropdown-item " href="/">English</a></li>
@@ -75,7 +84,7 @@ function Navbar() {
             <a href="/login" className="btn nav-btn-style">Login</a>
 
             {/* Sign Up */}
-            <a href="/signup" className="btn  text-white nav-btn-style2">Sign Up</a>
+            <a href="/signup" className="btn nav-btn-style2">Sign Up</a>
           </div>
         </div>
       </div>

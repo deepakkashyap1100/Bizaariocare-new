@@ -23,12 +23,12 @@ items: 1,
 };
 return (
 <>
-    <section className="hero-section">
-
+    <section className="hero-section"> 
         <OwlCarousel className="owl-theme " id='hero-slider' {...options}>
             {sliderArray.map((element)=> {
-            return <>
-                <div className="item banner-bg " key={element.id} style={element.sliderImage}>
+                return(
+                    <div key={element.id}> 
+                    <div className="item banner-bg "  style={element.sliderImage}>
                     <div className="container">
                         <div className="row">
                             <div className="col-md-8">
@@ -45,10 +45,10 @@ return (
                                         </div> 
                                     </div>
                                     <div className="rounded-buttons mt-4 ">
-                                        <div class="pill-button ">
+                                        <div className="pill-button ">
                                             <strong>10,000+</strong> Hospitals connected
                                         </div>
-                                        <div class="pill-button">
+                                        <div className="pill-button">
                                             <strong>10K+ </strong> doctors connected
                                         </div> 
                                     </div>
@@ -57,8 +57,9 @@ return (
                             </div>
                         </div>
                     </div>
-                </div>
-            </>
+                    </div>
+                    </div>
+            )
             }
             )}
         </OwlCarousel>

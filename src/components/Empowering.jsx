@@ -42,7 +42,7 @@ responsive: {
 
 return (
 <>
-    <section className='empoering-section pt-5'>
+    <section className='empoering-section spacing-top'>
         <div className="container">
             <div className="row">
                 <div className="col-lg-8 col-12">
@@ -50,9 +50,9 @@ return (
                     <p>Learn from leading doctors and specialists through focused, digestible video content.</p>
                 </div>
                 <div className="col-lg-4 col-12 d-flex justify-content-lg-end align-items-center">
-                    <div class="button-container">
-                        <button class="btn  btn-custom-white">For Doctor</button>
-                        <button class="btn  btn-custom">For Patients</button>
+                    <div className="button-container">
+                        <button className="btn  btn-custom-white">For Doctor</button>
+                        <button className="btn  btn-custom">For Patients</button>
                     </div>
                 </div>
             </div>

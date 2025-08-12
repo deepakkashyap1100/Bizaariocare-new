@@ -4,16 +4,18 @@ import Empowering from '../components/Empowering'
 import MedicalBoard from '../components/MedicalBoard'
 import New from '../components/New'
 import InterCollabs from '../components/InterCollabs'
+import SwiperSlider1 from '../components/others/SwiperSlider1'
 
 
 const Home = () => {
   return (
       <>
           <Hero />
-          <Empowering />
-      <MedicalBoard />
-      <InterCollabs/>
-     <New/> 
+    <Empowering />
+    <MedicalBoard />
+    <InterCollabs />
+      <New />
+      {/* <SwiperSlider1/> */}
       </>
   )
 }

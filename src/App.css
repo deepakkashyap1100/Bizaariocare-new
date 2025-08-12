@@ -35,12 +35,55 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
+
+@media screen and (min-width:992px) {
+  .spacing-top, .spacing-bottom{
+  padding-top: 100px;
+  
+}
+}
+@media screen and (max-width:991px) {
+  .spacing-top, .spacing-bottom{
+  padding-top: 60px;
+  
+}
+}
+@media screen and (max-width:768px) {
+  .spacing-top, .spacing-bottom{
+  padding-top: 40px;
+  
+}
+}
+
+.doctor-slider p{
+  margin-bottom: 0;
+}
+
+ .medical-tab-buttons #swiper-wrapper-5cf761c5d14f237f .swiper-slide {
+  /* min-width: 150px!important; */
+}
+
 /* header css */
+/* @media screen and (min-width:991px) { */
+  .headerfix {
+  transition: all 1.5s;
+  /* background-color: var(--white); */
+  /* box-shadow: 0px 3px 16px #efefef; */
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+/* } */
+
 
 .main-navbar ul li a{
   color: #a6a6a6;
   font-weight: 500;
   font-size: 14px;
+}
+
+.main-navbar{
+  padding: 8px 0;
 }
 #mainNavbar ul li .active{
   color: var(--primay);
@@ -55,7 +98,7 @@
 .nav-btn-style2{
   border:1px solid var(--secondary);
   background-color: var(--secondary);
-  color: var(--secondary);
+  color: var(--white);
   font-weight: 500;
 }
 
@@ -109,20 +152,27 @@
 
 .pill-button {
   display: inline-block;
-  padding: 3px 24px;
+  padding: 10px 24px;
   border: 1px solid white;
-  border-radius: 50px; /* fully rounded */
+      border-radius: 100%;
   color: white;
   font-size: 14px;
   font-weight: 400;
   background: transparent;
   text-align: center;
   white-space: nowrap;
+  max-width: 200px;
+}
+@media screen and (max-width:768px) {
+  .pill-button {
+      padding: 10px 10px;
+      max-width: 170px;
+  }
 }
 
 .pill-button strong {
-  font-weight: 700;
-  font-size: 22px;
+  font-weight: 400;
+  font-size: 20px;
   display: block;
   line-height: 1.2;
 }
@@ -138,11 +188,12 @@
 }
 
 .nav-btn-style2:hover {
-    border-color: var(--primay);
+    border-color: var(--secondary);
+    color: var(--secondary);
 }
 .nav-btn-style:hover {
-    border-color: var(--primay);
-    background-color: var(--primay);
+    border-color: var(--secondary);
+    background-color: var(--secondary);
     color: #fff;
 }
 
@@ -184,6 +235,15 @@ border:1px solid #ffffff;
 .cutom-tab-style {
     padding:10px 15px;
     /* margin: 10px; */
+    width: 100%;
+    
+}
+.cutom-tab-style2 {
+    padding:10px 15px;
+     border-radius: 40px;
+  border: 1px solid transparent;
+    /* margin: 10px; */
+
     
 }
 .lightBg{
@@ -213,7 +273,9 @@ overflow-x: scroll; */
 }
 
 
-
+#swiper-wrapper-589cb751887b681d .swiper-slide:last-child{
+  width: 270px !important;
+}
 
 
 /* .btn-primary {

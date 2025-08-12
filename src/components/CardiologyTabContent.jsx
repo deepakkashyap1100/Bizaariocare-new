@@ -42,7 +42,7 @@ return (
     <OwlCarousel className="owl-theme" {...options}>
         {dominicArr.map((item) => {
         return (
-        <>
+
             <div className="cardiology-card" key={item.id}>
                 <img src={item.image} alt="doctor" className=" mx-auto" />
                 <div className='d-flex justify-content-between pt-4'>
@@ -81,7 +81,7 @@ return (
                     </div>
                 </div>
             </div>
-        </>
+   
         )
         })}
     </OwlCarousel>
