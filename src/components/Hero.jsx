@@ -31,7 +31,7 @@ return (
                     <div className="item banner-bg "  style={element.sliderImage}>
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-8">
+                            <div className="col-md-7">
                                 <img src={element.sliderImage} alt="" />
                                 <div className="hero-content">
                                     <h1 className="hero-title">{element.bannerTitle}</h1>
