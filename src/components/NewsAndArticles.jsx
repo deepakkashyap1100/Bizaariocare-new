@@ -1,5 +1,5 @@
 
-import "../assets/css/NewsAndArticles.css"; // We'll put the styles here
+import "../assets/css/NewsAndArticles.css"; 
 
 import React, { useState } from "react";
 import { cardsData } from "../Data/LocalData";

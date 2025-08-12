@@ -40,6 +40,10 @@
 .read-more-btn{
   color: #f86f03;
 }
+h1, h2, h3{
+  color: #000000;
+}
+/* @import "./assets/css/NewsAndArticles.css";  */
 
 @media screen and (min-width:992px) {
   .spacing-top, .spacing-bottom{
@@ -371,4 +375,21 @@ overflow-x: scroll; */
 }
 .stats-card img{
   max-width: 100px;
+}
+.award-certfication{
+  background-color: #dedfe6;
+  padding: 18px;
+  border-radius: 10px;
+}
+.award-card{
+    background-color: #dedfe6;
+    border: 0;
+}
+@media screen and (min-width:992px) {
+  .crt-view-link{
+  font-size: 24px;
+}
+}
+.award-card img {
+  object-fit: cover;
 }

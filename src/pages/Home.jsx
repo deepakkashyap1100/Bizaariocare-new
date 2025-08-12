@@ -8,6 +8,8 @@ import SwiperSlider1 from '../components/others/SwiperSlider1'
 import LiveSessions from '../components/LiveSessions'
 import NewsAndArticles from '../components/NewsAndArticles'
 
+import Awards from '../components/Awards'
+
 
 const Home = () => {
   return (
@@ -19,6 +21,7 @@ const Home = () => {
       <LiveSessions/>
      
       <NewsAndArticles />
+      <Awards/>
        {/* <New /> */}
       {/* <SwiperSlider1/> */}
       </>
