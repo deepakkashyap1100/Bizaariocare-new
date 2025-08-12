@@ -112,13 +112,11 @@ h1, h2{
 }
 
 
-
-
 .banner-bg {
   width: 100%;
   /* height: auto; */
-  height: 90vh;
-  /* height: auto; */
+  /* height: 90vh; */
+  height: auto;
   top: 0;
   display: flex;
   align-items: center;
@@ -127,6 +125,16 @@ h1, h2{
   background-repeat: no-repeat;
   background-position: center;
 }
+@media screen and (min-width:1200px) {
+  .banner-bg {
+  width: 100%;
+  /* height: auto; */
+  height: 85vh;
+
+}
+  
+}
+
 
 .hero-content{
   padding: 40px 0;
