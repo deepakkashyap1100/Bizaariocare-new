@@ -34,7 +34,12 @@
   box-sizing: border-box;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
-
+.light-color{
+   color: #7b7b7f;
+}
+.read-more-btn{
+  color: #f86f03;
+}
 
 @media screen and (min-width:992px) {
   .spacing-top, .spacing-bottom{
@@ -221,8 +226,27 @@
   font-weight: 500;
 border:1px solid #ffffff;
 }
-.btn-custom-white{
+/* .btn-custom-white{
    color: var(--primay);
+  border:1px solid #ffffff;
+    border-radius: 8px;
+  padding: 4px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: white;
+} */
+.btn-custom:hover{
+  background-color: var(--white);
+  /* border: 1px solid ; */
+  color: var(--primay);
+}
+.btn-custom-white:hover{
+  border:1px solid var(--white);
+  color: var(--white);
+  background-color: transparent;;
+}
+.active-custom-tab {
+     color: var(--primay);
   border:1px solid #ffffff;
     border-radius: 8px;
   padding: 4px 16px;
@@ -303,9 +327,17 @@ overflow-x: scroll; */
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
-    flex: 1;
-    background: #f86f03;
+    /* flex: 1; */
+    background-color: #f86f03;
+    color: var(--white);
 }
+.common-btn-dark:hover{
+  color:#f86f03 ;
+  background-color: transparent;
+  border: 1px solid #f86f03;
+
+}
+
 .common-btn-outline {
   color:#f86f03;
   border: 1px solid #f86f03;
@@ -318,7 +350,12 @@ overflow-x: scroll; */
     flex: 1;
     /* background: var(--white); */
 }
+.common-btn-outline:hover {
+   border: 1px solid #f86f03;
+   background-color: #f86f03;
+   color: var(--white);
 
+}
 
 .stats-card3{
   background-color: #47b34e;

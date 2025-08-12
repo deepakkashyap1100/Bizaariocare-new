@@ -10,7 +10,7 @@ import dominic1 from '../assets/images/dominic1.png';
 import dominic2 from '../assets/images/dominic1.png';
 import dominic3 from '../assets/images/dominic1.png';
 import dominic4 from '../assets/images/dominic1.png';
-
+import news1 from '../assets/images/news1.png';
 
 
 export const sliderArray = [
@@ -98,3 +98,43 @@ export const dominicArr = [
     },
   
 ];
+
+ export const cardsData = [
+     {
+        id: 1,
+      category: "cardiology",
+      img: news1,
+         title: "The trend was noticed during a survey by Bumble",
+      desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
+    },
+    {
+      category: "cardiology",
+      img: news1,
+        title: "The trend was noticed during a survey by Bumble",
+      desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
+    },
+    {
+      category: "cardiology",
+      img: news1,
+        title: "The trend was noticed during a survey by Bumble",
+      desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
+    },
+    {
+      category: "orthopedics",
+      img: news1,
+        title: "Orthopedics Breakthroughs",
+      desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
+    },
+    {
+      category: "pediatrics",
+      img: news1,
+        title: "Pediatric Health Updates",
+      desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
+    },
+    {
+      category: "neurology",
+      img: news1,
+        title: "Neurology Research",
+      desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
+    }
+  ];

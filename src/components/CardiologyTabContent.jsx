@@ -74,7 +74,7 @@ return (
                 </div>
                 <div className="d-flex pt-3 " style={{gap:'20px'}}>
                     <div>
-                        <a href="/" className="btn common-btn-dark  text-white">Book an Appointments</a>
+                        <a href="/" className="btn common-btn-dark  ">Book an Appointments</a>
                     </div>
                     <div>
                         <a href="/" className="btn  common-btn-outline ">Send Medical Query</a>
