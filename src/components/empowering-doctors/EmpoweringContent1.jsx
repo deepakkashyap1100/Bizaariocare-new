@@ -19,17 +19,20 @@ center: true,
 responsive: {
 0: {
         items: 1,
-    margin:10,
+        margin: 10,
+    dots: true,
 },
 600: {
     items: 1,
     // stagePadding: 30,
-    margin:15,
+    margin: 15,
+    dots: true,
 },
 1000: {
     items: 2,
     // stagePadding: 60,
-    margin:20,
+    margin: 20,
+    dots: true,
 },
 1200: {
     items: 3,

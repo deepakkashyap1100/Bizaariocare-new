@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 // import { Pagination } from 'react-bootstrap';
-import { A11y, Navigation, Scrollbar, Pagination} from 'swiper/modules';
+import { A11y, Navigation, Scrollbar, Pagination, } from 'swiper/modules';
 
 const MedicalBoard = () => {
 const [activeTab, setActiveTab] = useState('tab1');
@@ -39,25 +39,19 @@ return (
       <div className="row">
 
         <div className=" medical-tab-buttons px-2 mb-4">
-            <Swiper 
-            // install Swiper modules 
+            {/* <Swiper  
               modules={[Navigation, Pagination, Scrollbar, A11y]}
-              spaceBetween={10}
-
-        
-              // slidesPerView={'auto'}
+              spaceBetween={10} 
+               slidesOffsetAfter={50} 
               navigation
-              pagination={{ clickable: true }}
-              // scrollbar={{ draggable: false }}
-            // onSwiper={(swiper)=> console.log(swiper) }
-        
+              pagination={{ clickable: true }} 
             breakpoints={{
             0: {
+              slidesPerView: 1, 
+            },
+            4200: {
               slidesPerView: 2, 
             },
-            // 400: {
-            //   slidesPerView: 3, 
-            // },
             769: {
               slidesPerView: 3, 
             },
@@ -69,62 +63,50 @@ return (
             },
       }}
             className="mySwiper"
+            > */}
+       
+            <button className={`cutom-tab-style ${activeTab==='tab1' ? 'activeTab' : 'text-dark' }`} onClick={()=>
+            setActiveTab('tab1')}>
+            Cardiology
+          </button>
+
+          <button className={`cutom-tab-style ${activeTab==='tab2' ? ' activeTab' : 'text-dark' }`} onClick={()=>
+            setActiveTab('tab2')}
             >
-            <SwiperSlide>
-              <button className={` py-2 cutom-tab-style ${activeTab==='tab1' ? 'activeTab' : 'lightBg' }`} onClick={()=>
-                setActiveTab('tab1')}>
-                Cardiology
-              </button>
+            Orthopedics
+          </button>
 
-            </SwiperSlide>
-            <SwiperSlide>
+          <button className={`cutom-tab-style ${activeTab==='tab3' ? 'activeTab' : 'text-dark' }`} onClick={()=>
+            setActiveTab('tab3')}
+            >
+            Pediatrics
+          </button>
 
-              <button className={` py-2 cutom-tab-style ${activeTab==='tab2' ? ' activeTab' : 'lightBg' }`}
-                onClick={()=> setActiveTab('tab2')}
-                >
-                Orthopedics
-              </button>
-            </SwiperSlide>
-            <SwiperSlide>
-              <button className={` py-2 cutom-tab-style ${activeTab==='tab3' ? 'activeTab' : 'lightBg' }`} onClick={()=>
-                setActiveTab('tab3')}
-                >
-                Pediatrics
-              </button>
-            </SwiperSlide>
-            <SwiperSlide>
-              <button className={` py-2 cutom-tab-style ${activeTab==='tab4' ? 'activeTab' : 'lightBg' }`} onClick={()=>
-                setActiveTab('tab4')}
-                >
-                Neurology
-              </button>
-            </SwiperSlide>
-            <SwiperSlide>
+          <button className={`cutom-tab-style ${activeTab==='tab4' ? 'activeTab' : 'text-dark' }`} onClick={()=>
+            setActiveTab('tab4')}
+            >
+            Neurology
+          </button>
+          <button className={` cutom-tab-style ${activeTab==='tab7' ? 'activeTab' : 'text-dark' }`} onClick={()=>
+            setActiveTab('tab7')}
+            >
+            Plastic & Reconstructive Surgery
+          </button>
 
-              <button className={` py-2 cutom-tab-style ${activeTab==='tab5' ? 'activeTab' : 'lightBg' }`} onClick={()=>
-                setActiveTab('tab5')}
-                >
-                Obstetrics & Gynecology
-              </button>
-            </SwiperSlide>
-            <SwiperSlide>
+          <button className={` cutom-tab-style ${activeTab==='tab5' ? 'activeTab' : 'text-dark' }`} onClick={()=>
+            setActiveTab('tab5')}
+            >
+            Obstetrics & Gynecology
+          </button>
 
-              <button className={` py-2 cutom-tab-style ${activeTab==='tab6' ? 'activeTab' : 'lightBg' }`} onClick={()=>
-                setActiveTab('tab6')}
-                >
-                Otorhinolaryngology
-              </button>
-
-            </SwiperSlide>
-            <SwiperSlide>
-              <button className={`flex-1 py-2 cutom-tab-style ${activeTab==='tab7' ? 'activeTab' : 'lightBg' }`}
-                onClick={()=> setActiveTab('tab7')}
-                >
-                Plastic & Reconstructive Surgery
-              </button>
-            </SwiperSlide>
-
-          </Swiper>
+          <button className={` cutom-tab-style ${activeTab==='tab6' ? 'activeTab' : 'text-dark' }`} onClick={()=>
+            setActiveTab('tab6')}
+            >
+            Otorhinolaryngology
+          </button>
+          
+             
+       
         </div>
 
         {/* Tab Content */}

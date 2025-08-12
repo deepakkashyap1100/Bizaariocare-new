@@ -59,7 +59,7 @@ h1, h2{
 }
 @media screen and (max-width:768px) {
   .spacing-top, .spacing-bottom{
-  padding-top: 40px;
+  padding-top: 50px;
   
 }
 }
@@ -266,9 +266,10 @@ border:1px solid #ffffff;
 
 /* --------medical-borard-section---- */
 .cutom-tab-style {
-    padding:10px 15px;
+    padding:4px 16px;
     /* margin: 10px; */
-    width: 100%;
+    /* width: 100%; */
+    font-size: 14px;
     
 }
 .cutom-tab-style2 {
@@ -499,7 +500,8 @@ background-color: var(--secondary);
 }
   
 }
-.cardiology-owl .owl-dots
+:is(.cardiology-owl .cardiology-owl, .doctor-slider)
+ .owl-dots
 .active span{
   background-color: var(--secondary)!important;
 
