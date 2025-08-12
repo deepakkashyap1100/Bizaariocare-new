@@ -153,11 +153,7 @@ nav#mainNavbar .container {
     padding-bottom: 30px;
 }
 }
-@media (min-width:992px){
-  .hero-content{
-  padding: 100px 0;
-}
-}
+
 
 .hero-title{
   /* font-size: 62px; */
@@ -165,11 +161,25 @@ nav#mainNavbar .container {
   font-weight: 600;
 }
 @media screen and (min-width: 992px) {
-.hero-text {
-    text-shadow: 0px 1px 1px #000000;
-    font-size: 18px;
+  .hero-title{
+  font-size: 48px;
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+  .hero-content{
+  padding: 100px 0;
 }
   
+}
+@media screen and (min-width: 1024px) {
+    .hero-title{
+  font-size: 62px;
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
 }
 
 .hero-text{
@@ -179,6 +189,14 @@ nav#mainNavbar .container {
   font-weight: 200;
   line-height: 1.5;
 
+}
+@media (min-width:992px){
+.hero-text {
+    text-shadow: 0px 1px 1px #000000;
+    font-size: 20px;
+    margin-bottom:20px ;
+    padding-right: 20px;
+}
 }
 
 .pill-button {
@@ -218,6 +236,7 @@ nav#mainNavbar .container {
   }
   .banner-bg{
   background-position: left;
+  background-size: inherit;
   }
   .pill-button strong{
     font-size: 16px;
@@ -347,7 +366,7 @@ overflow-x: scroll; */
 } */
 
 .cardiology-card{
-  padding: 10px;
+  padding: 15px;
   background-color: #e6e8fc;
   border-radius: 10px;
 
