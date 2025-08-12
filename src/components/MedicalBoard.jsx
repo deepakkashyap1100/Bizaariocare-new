@@ -86,6 +86,11 @@ return (
             setActiveTab('tab4')}
             >
             Neurology
+            </button>
+             <button className={` cutom-tab-style ${activeTab==='tab5' ? 'activeTab' : 'text-dark' }`} onClick={()=>
+            setActiveTab('tab5')}
+            >
+            Obstetrics & Gynecology
           </button>
           <button className={` cutom-tab-style ${activeTab==='tab7' ? 'activeTab' : 'text-dark' }`} onClick={()=>
             setActiveTab('tab7')}
@@ -93,11 +98,7 @@ return (
             Plastic & Reconstructive Surgery
           </button>
 
-          <button className={` cutom-tab-style ${activeTab==='tab5' ? 'activeTab' : 'text-dark' }`} onClick={()=>
-            setActiveTab('tab5')}
-            >
-            Obstetrics & Gynecology
-          </button>
+         
 
           <button className={` cutom-tab-style ${activeTab==='tab6' ? 'activeTab' : 'text-dark' }`} onClick={()=>
             setActiveTab('tab6')}
