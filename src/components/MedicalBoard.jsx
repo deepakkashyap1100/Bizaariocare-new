@@ -46,8 +46,8 @@ return (
 
         
               // slidesPerView={'auto'}
-              // navigation
-              // pagination={{ clickable: true }}
+              navigation
+              pagination={{ clickable: true }}
               // scrollbar={{ draggable: false }}
             // onSwiper={(swiper)=> console.log(swiper) }
         

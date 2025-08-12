@@ -28,3 +28,17 @@
 .card-img-top{
     border-radius: 10px;
 }
+.news-inner{
+  /* display: flex;
+  justify-content: space-between; */
+  margin-bottom: 40px;
+}
+@media screen and (min-width:991px) {
+  .news-inner{
+  display: flex;
+  justify-content: space-between;
+}
+}
+.tab-btn-style{
+  background-color: #e8e9f0;
+}

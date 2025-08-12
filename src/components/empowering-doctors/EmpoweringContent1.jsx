@@ -23,17 +23,17 @@ responsive: {
 },
 600: {
     items: 1,
-    stagePadding: 30,
+    // stagePadding: 30,
     margin:15,
 },
 1000: {
     items: 2,
-    stagePadding: 60,
+    // stagePadding: 60,
     margin:20,
 },
 1200: {
     items: 3,
-    stagePadding: 100,
+    stagePadding: 50,
     margin:30,
 }
 }

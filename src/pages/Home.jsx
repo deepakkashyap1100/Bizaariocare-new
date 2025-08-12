@@ -18,7 +18,8 @@ const Home = () => {
       <>
           <Hero />
     <Empowering />
-    <MedicalBoard />
+      <MedicalBoard />
+      {/* Cardiology */}
       <InterCollabs />
       <LiveSessions/>
      

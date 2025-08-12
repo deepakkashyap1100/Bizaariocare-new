@@ -7,7 +7,7 @@ const LiveSessions = () => {
     const renderContent = () => {
     switch (activeTab) {
         case 'tab1':
-            return <div>
+            return <div className='mt-4 mt-md-0'>
                 <LiveSessionContent/>
             </div>
                 
@@ -47,7 +47,7 @@ const LiveSessions = () => {
                   <div className="row">
                        <div className="col-lg-8 col-12">
                           <h4 className='fw-semibold pt-2'>Doctor Mike hosts the AMA Tribute to the Medical School Class of 2023</h4>
-                          <p className='mb-0'>By Doctor Malik</p>
+                          <p className='mb-3 mb-lg-0'>By Doctor Malik</p>
                       </div>
                       <div className="col-lg-4 col-12 d-flex justify-content-lg-end align-items-center"> 
                           <button className={`btn common-btn-dark   `}>

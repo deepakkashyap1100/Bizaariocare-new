@@ -9,7 +9,8 @@ dots: false,
 nav: false,
 autoplay: false,
 mouseDrag: true,
-smartSpeed: 2000,
+    smartSpeed: 2000,
+lazyLoad:true,
 // animateOut: "fadeOut",
 loop: true,
 // animateIn: 'flipInX',
@@ -18,28 +19,31 @@ loop: true,
 responsive: {
 0: {
 items: 1,
-margin:10,
+        margin: 10,
+dots: true,
 },
 600: {
 items: 1,
-stagePadding: 30,
-margin:15,
+stagePadding: 0,
+    margin: 15,
+dots: true,
 },
 1000: {
 items: 2,
-stagePadding: 60,
-margin:20,
+stagePadding: 0,
+    margin: 20,
+dots: true,
 },
 1200: {
 items: 3,
-stagePadding: 100,
+stagePadding: 50,
 margin:30,
 }
 }
 };
 return (
 <>
-    <OwlCarousel className="owl-theme" {...options}>
+    <OwlCarousel className="owl-theme cardiology-owl" {...options}>
         {dominicArr.map((item) => {
         return (
 

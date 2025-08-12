@@ -174,7 +174,7 @@ h1, h2{
 }
 @media screen and (max-width:768px) {
   .pill-button {
-      padding: 10px 10px;
+      padding: 15px 16px;
       max-width: 170px;
   }
 }
@@ -192,7 +192,13 @@ h1, h2{
 }
 @media screen and (max-width: 768px) {
   .hero-btns, .rounded-buttons {
-    flex-direction: column;
+    /* flex-direction: column; */
+  }
+  .banner-bg{
+  background-position: left;
+  }
+  .pill-button strong{
+    font-size: 16px;
   }
 }
 
@@ -476,4 +482,29 @@ color:#7b7b7f;
   gap: 20px;
 
 }
+}
+.live-session video{
+  height: auto;
+} 
+
+.medical-tab-buttons .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 44px;
+
+}
+.medical-tab-buttons  span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+background-color: var(--secondary);
+}
+@media screen and (min-width: 1200px) {
+  .cardiology-owl .owl-stage, .doctor-slider .owl-stage{
+  margin-left: -50px!important; 
+}
+  
+}
+.cardiology-owl .owl-dots
+.active span{
+  background-color: var(--secondary)!important;
+
+}
+.cardiology-owl .owl-dots{
+  margin-top: 15px;
 }
