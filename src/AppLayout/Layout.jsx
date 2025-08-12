@@ -1,6 +1,7 @@
 import React from 'react'
 import { Outlet, useNavigation } from 'react-router-dom'
 import MyNavbar from './MyNavbar';
+import Footer from './Footer';
 // import Header from './Header'
 // import Footer from './Footer';
 
@@ -15,7 +16,7 @@ const Layout = () => {
       <MyNavbar /> 
   
     <Outlet/>    
-    {/* <Footer/> */}
+    <Footer/>
 </>
   )
 }

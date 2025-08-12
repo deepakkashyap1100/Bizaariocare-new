@@ -5,6 +5,7 @@ import Layout from './AppLayout/Layout'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home';
 import About from './pages/About';
+import HospitalsPartners from './pages/HospitalsPartners';
 
 
 export default function App() {
@@ -22,16 +23,16 @@ export default function App() {
           path: '/about',
           element: <About/>
         },
-        // {
-        //   path: '/ourproduct',
-        //   element: <OurProduct />
-        // },
-        // {
-        //   path: '/aluminum',
-        //   element: <AluminumProfile />
-        // },
         {
-          // path: '/project',
+          path: '/partners',
+          element: <HospitalsPartners />
+        },
+        {
+          path: '/board',
+          // element: <AluminumProfile />
+        },
+        {
+          path: '/news',
           // element: <Projects />,
           // loader: getApi
         },

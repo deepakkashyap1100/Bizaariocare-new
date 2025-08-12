@@ -11,7 +11,7 @@ import dominic2 from '../assets/images/dominic1.png';
 import dominic3 from '../assets/images/dominic1.png';
 import dominic4 from '../assets/images/dominic1.png';
 import news1 from '../assets/images/news1.png';
-
+import awardImage1 from  '../assets/images/award.png'
 
 export const sliderArray = [
     {
@@ -138,3 +138,15 @@ export const dominicArr = [
       desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
     }
   ];
+
+export const awardsCertfication = [
+     {
+        id: 1,
+        image: awardImage1,
+        title1: "Best Cardiologist 2022",
+        title2:'Indian Medical Association',
+        dsc: 'I has received multiple awards for excellence in cardiology and patient care, including recognition for clinical innovation and compassionate service. His work continues to be honored by leading medical associations.',
+        date: '15/05/2022',
+        crtLink: '' 
+  },
+  ]

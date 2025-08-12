@@ -9,6 +9,8 @@ import LiveSessions from '../components/LiveSessions'
 import NewsAndArticles from '../components/NewsAndArticles'
 
 import Awards from '../components/Awards'
+import AwardsSlider from '../components/awards-certification/AwardsSlider'
+import Testimonial from '../components/Testimonial'
 
 
 const Home = () => {
@@ -21,9 +23,12 @@ const Home = () => {
       <LiveSessions/>
      
       <NewsAndArticles />
-      <Awards/>
+      <Awards />
+      <Testimonial/>
        {/* <New /> */}
       {/* <SwiperSlider1/> */}
+
+      {/* <AwardsSlider/> */}
       </>
   )
 }
