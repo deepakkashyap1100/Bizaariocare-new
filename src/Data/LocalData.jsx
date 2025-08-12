@@ -132,6 +132,36 @@ export const dominicArr = [
       desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
     },
     {
+      category: "obgyn",
+      img: news1,
+        title: "Pediatric Health Updates",
+      desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
+    },
+    {
+      category: "obgyn",
+      img: news1,
+        title: "Pediatric Health Updates",
+      desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
+    },
+    {
+      category: "ent",
+      img: news1,
+        title: "Pediatric Health Updates",
+      desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
+    },
+    {
+      category: "plastic",
+      img: news1,
+        title: "Pediatric Health Updates",
+      desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
+    },
+    {
+      category: "plastic",
+      img: news1,
+        title: "Pediatric Health Updates",
+      desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
+    },
+    {
       category: "neurology",
       img: news1,
         title: "Neurology Research",
