@@ -231,18 +231,6 @@ nav#mainNavbar .container {
   display: flex;
   gap: 20px;
 }
-@media screen and (max-width: 768px) {
-  .hero-btns, .rounded-buttons {
-    /* flex-direction: column; */
-  }
-  .banner-bg{
-  background-position: left;
-
-  }
-  .pill-button strong{
-    font-size: 16px;
-  }
-}
 @media screen and (max-width: 991px) {
     .banner-bg{
   background-size: inherit;
@@ -250,6 +238,19 @@ nav#mainNavbar .container {
 
   }
 }
+@media screen and (max-width: 768px) {
+  .hero-btns, .rounded-buttons {
+    /* flex-direction: column; */
+  }
+  .banner-bg{
+  background-position: top;
+
+  }
+  .pill-button strong{
+    font-size: 16px;
+  }
+}
+
 
 .nav-btn-style2:hover {
     border-color: var(--secondary);
