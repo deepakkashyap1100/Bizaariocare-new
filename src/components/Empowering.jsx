@@ -6,15 +6,9 @@ const Empowering = () => {
         
         const renderContent = () => {
         switch (activeTab) {
-            case 'tab1':
-                return <div>
-                    <EmpoweringContent1/>
-                </div>
+            case 'tab1': return <div> <EmpoweringContent1/> </div>
                     
-            case 'tab2':
-            return <div className="p-4">
-                For Patients
-            </div>; 
+            case 'tab2':return <div> <EmpoweringContent1/> </div>
             return null;
         }
       };

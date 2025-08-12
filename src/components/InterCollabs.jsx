@@ -6,14 +6,8 @@ const InterCollabs = () => {
     const [activeTab, setActiveTab] = useState('tab1');
     const renderContent = () => {
     switch (activeTab) {
-        case 'tab1':
-            return <InternationalTab1/>
-                
-        case 'tab2':
-        return <div className="p-4">
-            2
-        </div>;
-
+        case 'tab1':  return <InternationalTab1/> 
+        case 'tab2': return <InternationalTab1/> 
         return null;
     }
   };

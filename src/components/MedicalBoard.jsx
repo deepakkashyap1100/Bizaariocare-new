@@ -18,16 +18,12 @@ case 'tab1':
 return <div className="py-2">
   <CardiologyTabContent />
 </div>;
-case 'tab2':
-return <div className="p-4">Lorem ipsum dolor sit
-
-</div>;
-case 'tab3':
-return <div className="p-4">This is Tab 3 content dipisicing elit.</div>;
-case 'tab4':
-return <div className="p-4">This is Tab 4 content. Lorem ipsum dolor sit amet.</div>;
-case 'tab5':
-return <div className="p-4">This is Tab 5 content. </div>;
+case 'tab2': return  <div className="py-2">  <CardiologyTabContent /> </div>;
+case 'tab3': return <div className="py-2">  <CardiologyTabContent /> </div>;
+case 'tab4': return <div className="py-2">  <CardiologyTabContent /> </div>;
+case 'tab5': return <div className="py-2">  <CardiologyTabContent /> </div>;
+case 'tab6': return <div className="py-2">  <CardiologyTabContent /> </div>;
+case 'tab7': return <div className="py-2">  <CardiologyTabContent /> </div>;
 return null;
 }
 };
