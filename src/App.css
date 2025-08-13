@@ -321,8 +321,9 @@ button.owl-prev  {
     background-color: #F86F03!important; 
     display: grid;
     place-items: center;
-  
+  margin-right: 10px;
 }
+
 button.owl-prev span{
     /* font-size:30px; */
     color: #ffffff;
@@ -333,14 +334,13 @@ button.owl-next  {
     background-color: #F86F03!important; 
     display: grid;
     place-items: center;
+    margin-left: 10px;
   
 }
 #testmonital-owl
 .owl-nav{
   margin-top: 30px;
-  max-width: 100px;
-  display: flex;
-  justify-content: space-between;
+
   
 }
 /* .button.owl-next > img{
