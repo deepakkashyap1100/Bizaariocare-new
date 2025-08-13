@@ -4,7 +4,7 @@ import langIcon from '../assets/images/icons/language.svg';
 import Logo from '../assets/images/logo1.png'; 
 //  import home from '../assets/css/home..module.css'; 
 
-function Navbar() {
+const Header = () => {
   const [scrollDown, setScrollDown]= useState(false);
 
   window.onscroll = function() {
@@ -43,10 +43,12 @@ function Navbar() {
           {/* Center links */}
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <a className="nav-link fw-bold active" href="/">Home</a>
+          
+                <Link to="/" className='nav-link fw-bold'>Home</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-secondary" href="/about">About Us</a>
+         
+                <Link to="/about" className='nav-link text-secondary'>About</Link>
             </li>
             <li className="nav-item">
               <a className="nav-link text-secondary" href="/partners">Hospital Partners</a>
@@ -95,4 +97,6 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+
+
+export default Header;
