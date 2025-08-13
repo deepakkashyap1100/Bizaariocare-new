@@ -23,7 +23,7 @@ smartSpeed: 1000,
 loop: true,
 // animateIn: 'flipInX',
 items: 1,
-// margin:30,
+margin:10,
 // stagePadding:30,
 navText: [`<img src=${myprevimage}>` ,`<img src=${mynextimage}>`]
 };
