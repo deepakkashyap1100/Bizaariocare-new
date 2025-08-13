@@ -1,7 +1,7 @@
 :root{
 
   
-@import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap'); */
     --roboto: 'Roboto', sans-serif;    
     --opensans: 'Open Sans', sans-serif;
     --primay: #525fe2;
@@ -15,17 +15,20 @@
     --gray3: #272727;
   
 }
-/* @font-face {
-  font-family: 'Roboto';
+@font-face {
+  font-family: "Roboto", sans-serif;
   font-style: NORMAL_OR_ITALIC;
   font-weight: NUMERIC_WEIGHT_VALUE;
-  src: url(FONT_FILE_NAME.woff2) format('woff2');
-} */
+  src: url(./assets/fonts/Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf) format('ttf');
+  src: url(./assets/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf) format('ttf');
+}
+ 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--roboto);
+  /* font-family: var(--roboto); */
+font-family: "Roboto", sans-serif;
 }
 #root {
   max-width: 100%;
@@ -47,7 +50,7 @@ h1, h2{
 
 @media screen and (min-width:992px) {
   .spacing-top, .spacing-bottom{
-  padding-top: 100px;
+  padding-top: 120px;
   
 }
 }
@@ -335,12 +338,20 @@ border:1px solid #ffffff;
 }
 
 /* --------medical-borard-section---- */
+
+
 .cutom-tab-style {
-    padding:4px 16px;
+    padding: 14px;
     /* margin: 10px; */
     /* width: 100%; */
     font-size: 14px;
     
+}
+@media screen and (max-width:991px) {
+  .cutom-tab-style {
+    padding: 8px;
+
+}
 }
 .cutom-tab-style2 {
     padding:10px 15px;
@@ -350,7 +361,7 @@ border:1px solid #ffffff;
 
     
 }
-.lightBg{
+.gray-btn-style{
   background-color: #eeeef1;
   color: #626366;
 }

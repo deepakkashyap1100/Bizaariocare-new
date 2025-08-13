@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import LiveSessionContent from './live-sessions-online-clinic/LiveSessionContent';
+import OnlineClinic from './live-sessions-online-clinic/OnlineClinic';
 
 const LiveSessions = () => {
     const [activeTab, setActiveTab] = useState('tab1');
@@ -12,8 +13,8 @@ const LiveSessions = () => {
             </div>
                 
         case 'tab2':
-        return <div className="p-4">
-            2
+        return <div className="">
+           {/* <OnlineClinic/> */}
         </div>;
 
         return null;

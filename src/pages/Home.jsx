@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from '../components/Hero'
 import Empowering from '../components/Empowering'
-import MedicalBoard from '../components/MedicalBoard'
+import MedicalBoard from '../components/medical-board/MedicalBoard'
 import New from '../components/NewsAndArticles'
 import InterCollabs from '../components/InterCollabs'
 import SwiperSlider1 from '../components/others/SwiperSlider1'
@@ -11,14 +11,16 @@ import NewsAndArticles from '../components/NewsAndArticles'
 import Awards from '../components/Awards'
 import AwardsSlider from '../components/awards-certification/AwardsSlider'
 import Testimonial from '../components/Testimonial'
+import MedicalBoardPartnerHospitals from '../components/MedicalBoardPartnerHospitals'
 
 
 const Home = () => {
   return (
       <>
           <Hero />
-    <Empowering />
-      <MedicalBoard />
+      <Empowering />
+      <MedicalBoardPartnerHospitals/>
+      {/* <MedicalBoard /> */}
       {/* Cardiology */}
       <InterCollabs />
       <LiveSessions/>
