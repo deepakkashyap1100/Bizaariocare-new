@@ -323,7 +323,11 @@ button.owl-prev  {
     place-items: center;
   margin-right: 10px;
 }
-
+    #navbarNav ul li:hover a{
+      text-decoration: none;
+      color: var(--primay);
+    
+    }
 button.owl-prev span{
     /* font-size:30px; */
     color: #ffffff;
