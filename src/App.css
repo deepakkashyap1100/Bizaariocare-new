@@ -195,7 +195,19 @@ div#navbarNav ul li {
 
 }
 }
-
+.btn-group1{
+  gap: 20px;
+}
+.error{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.inner-err{
+  padding: 40px;
+  box-shadow: 3px 5px 15px rgb(194, 194, 194);
+  border-radius: 20px;
+}
 
 @media (min-width:992px){
 .hero-text {

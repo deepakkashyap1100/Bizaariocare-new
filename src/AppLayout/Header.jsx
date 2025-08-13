@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router'
+import { Link, NavLink } from 'react-router'
 import langIcon from '../assets/images/icons/language.svg';
 import Logo from '../assets/images/logo1.png'; 
 //  import home from '../assets/css/home..module.css'; 
@@ -42,25 +42,27 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           {/* Center links */}
           <ul className="navbar-nav mx-auto">
-            <li className="nav-item">
-          
-                <Link to="/" className='nav-link fw-bold'>Home</Link>
+            <li > 
+                <NavLink to="/"  className='nav-link '>Home</NavLink>
             </li>
             <li className="nav-item">
          
-                <Link to="/about" className='nav-link text-secondary'>About</Link>
+                <NavLink to="/about" className='nav-link '>About</NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-secondary" href="/partners">Hospital Partners</a>
+               
+                <NavLink to="/partners" className='nav-link '>Hospital Partners</NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-secondary" href="/board">Medical Board</a>
+              
+                <NavLink to="/medical"  className='nav-link '>Medical Board</NavLink>
+            </li>
+            <li className="nav-item"> 
+                <NavLink to="/articles"  className='nav-link '>News & Articles</NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-secondary" href="/news">News & Articles</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-secondary" href="/contact">Contact Us</a>
+                
+                <NavLink to="/contact"  className='nav-link '>Contact Us</NavLink>
             </li>
           </ul>
 

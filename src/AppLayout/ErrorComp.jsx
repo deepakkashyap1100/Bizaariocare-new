@@ -14,14 +14,14 @@ const ErrorComp = () => {
     } 
     if (error.status === 404) {
         return (
-            <div className='bg-gray-300 min-h-screen flex items-center'>
-                <div className="container min-h-96 bg-white flex justify-center item-center">
-                    <div className='p-4 '>
-                        <h1 className='text-9xl text-center text-red-600' >404!</h1>
-                        <h2 className='text-center'>PAGE NOT FOUND</h2>
-                        <div className='flex justify-between items-center mt-3'>
-                            <button > <NavLink to="/"><span className='text-rose-700 underline underline-offset-8'>Back to Home</span></NavLink></button> 
-                            <button className=' text-teal-500 underline underline-offset-8' onClick={backFun}>Back to previous</button>
+            <div className='bg-gray error'>
+                <div className="container  bg-white d-flex justify-content-center align-items-center">
+                    <div className='p-4 inner-err'>
+                        <h1 className=' text-center text-denger' >404!</h1>
+                        <h4 className='text-center'>PAGE NOT FOUND</h4>
+                        <div className='d-flex justify-content-between items-center mt-3 btn-group1'>
+                            <button className='btn btn-primary'> <NavLink to="/" className='text-decoration-none'><span className='text-white  '>Back to Home</span></NavLink></button> 
+                            <button className='btn btn-warning text-white' onClick={backFun}>Back to previous</button>
                         </div> 
                     </div> 
                 </div>
