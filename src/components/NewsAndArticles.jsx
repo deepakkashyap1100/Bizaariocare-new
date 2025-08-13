@@ -49,8 +49,8 @@ const NewsAndArticles = () => {
         {/* Tabs */}
         <div className="d-flex flex-wrap gap-md-4 gap-3 mb-4">
           {categories.map((cat) => (
-          <button key={cat.key} className={`btn btn-sm rounded-pill px-3 ${ activeCategory===cat.key
-            ? "btn-primary text-white" : "tab-btn-style text-dark" }`} onClick={()=> setActiveCategory(cat.key)}
+          <button key={cat.key} className={`  cutom-tab-style  ${ activeCategory===cat.key
+            ? "activeTab " : "tab-btn-style gray-btn-style" }`} onClick={()=> setActiveCategory(cat.key)}
             >
             {cat.label}
           </button>

@@ -32,52 +32,23 @@ return (
 <>
   <section className=''>
     <div className="container ">
-      <div className="row">
-
-        <div className=" medical-tab-buttons mb-4">
-            {/* <Swiper  
-              modules={[Navigation, Pagination, Scrollbar, A11y]}
-              spaceBetween={10} 
-               slidesOffsetAfter={50} 
-              navigation
-              pagination={{ clickable: true }} 
-            breakpoints={{
-            0: {
-              slidesPerView: 1, 
-            },
-            4200: {
-              slidesPerView: 2, 
-            },
-            769: {
-              slidesPerView: 3, 
-            },
-            992: {
-              slidesPerView: 5, 
-            },
-            1024: {
-              slidesPerView: 6, 
-            },
-      }}
-            className="mySwiper"
-            > */}
-       
+      <div className="row"> 
+          <div className=" medical-tab-buttons mb-4"> 
+            
             <button className={`cutom-tab-style ${activeTab==='tab1' ? 'activeTab' : 'gray-btn-style' }`} onClick={()=>
             setActiveTab('tab1')}>
             Cardiology
-          </button>
-
+          </button> 
           <button className={`cutom-tab-style ${activeTab==='tab2' ? ' activeTab' : 'gray-btn-style' }`} onClick={()=>
             setActiveTab('tab2')}
             >
             Orthopedics
-          </button>
-
+          </button> 
           <button className={`cutom-tab-style ${activeTab==='tab3' ? 'activeTab' : 'gray-btn-style' }`} onClick={()=>
             setActiveTab('tab3')}
             >
             Pediatrics
-          </button>
-
+          </button> 
           <button className={`cutom-tab-style ${activeTab==='tab4' ? 'activeTab' : 'gray-btn-style' }`} onClick={()=>
             setActiveTab('tab4')}
             >
@@ -92,21 +63,13 @@ return (
             setActiveTab('tab7')}
             >
             Plastic & Reconstructive Surgery
-          </button>
-
-         
-
+          </button> 
           <button className={` cutom-tab-style ${activeTab==='tab6' ? 'activeTab' : 'gray-btn-style' }`} onClick={()=>
             setActiveTab('tab6')}
             >
             Otorhinolaryngology
-          </button>
-          
-             
-       
-        </div>
-
-        {/* Tab Content */}
+          </button> 
+        </div>  
         <div style={{padding:0}}>{renderContent()}</div>
       </div>
     </div>

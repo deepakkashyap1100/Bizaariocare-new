@@ -19,3 +19,15 @@
  .content-spacing{
     margin-top: 30px;
 }
+.doctor-cell-data{
+    font-size: 14px;
+    background-color: #525fe1;
+    /* padding-block: 40px; */
+}
+.appoint-doc-tabs > button{
+
+  margin-right: 15px;
+}
+.appoint-doc-tabs{
+    overflow: hidden;
+}

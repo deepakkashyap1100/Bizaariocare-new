@@ -13,6 +13,7 @@ import { MdEmail, MdPhone, MdLanguage } from "react-icons/md";
 import { FaFigma } from "react-icons/fa";
 import "../assets/css/footer.css";
 import footerLogo from '../assets/images/footerlogo.png'
+import { NavLink } from "react-bootstrap";
 
 
 const Footer = () => {
@@ -22,11 +23,14 @@ const Footer = () => {
         <div className="row gy-4">
           {/* Logo & About */}
           <div className="col-lg-4 col-md-6">
-            <img
+            <div className="footer-logo">
+ <img
               src={footerLogo}
               alt="Bizaario Logo"
               className="mb-3"
             />
+            </div>
+           
             <p className="footer-text">
               High level experience in web design and development knowledge,
               producing quality work.
@@ -54,6 +58,7 @@ const Footer = () => {
           <div className="col-lg-2 col-md-6">
             <h6 className="fw-bold mb-3">Company</h6>
             <ul className="list-unstyled ft-quick-link">
+              {/* <NavLink to='/about'>About Us </NavLink> */}
               <li>About Us</li>
               <li>FAQs</li>
               <li>Contact Us</li>

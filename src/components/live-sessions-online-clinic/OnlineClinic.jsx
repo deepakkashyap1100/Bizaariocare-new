@@ -1,10 +1,11 @@
 import React from 'react'
-import OnlineClnicCard from '../../UI/OnlineClinicCard'
+
+import DoctorAppointmentTable from '../../UI/DoctorAppointmentTable'
 
 const OnlineClinic = () => {
   return (
       <>
-        <OnlineClnicCard/>
+        <DoctorAppointmentTable/>
       </>
   )
 }

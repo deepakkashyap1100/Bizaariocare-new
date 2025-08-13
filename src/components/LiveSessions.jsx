@@ -14,7 +14,7 @@ const LiveSessions = () => {
                 
         case 'tab2':
         return <div className="">
-           {/* <OnlineClinic/> */}
+      <OnlineClinic/>
         </div>;
 
         return null;
@@ -23,14 +23,14 @@ const LiveSessions = () => {
   return (
       <>
           <section className='spacing-top'>
-              <div className="container">
+              <div className="container ">
                   <div className="row">
                       <div className="col-lg-8 col-12">
                           <h2 className='fw-semibold '>Live Sessions and Online Clinics</h2>
                           <p>Learn from leading doctors and specialists through focused, digestible video content.</p>
                       </div>
                       <div className="col-lg-4 col-12 d-flex justify-content-lg-end align-items-center"> 
-                          <div className="button-container">
+                          <div className="button-container mb-lg-0  mb-4">
                               <button className={`btn btn-custom ${activeTab==='tab1' ? 'active-custom-tab' : '' }`}
                                   onClick={()=> setActiveTab('tab1')}>
                                   Live Sessions
@@ -43,7 +43,7 @@ const LiveSessions = () => {
                       </div>
                   </div>
                   <div className="row">
-                      <div className="bg-white ">{renderContent()}</div>
+                      <div>{renderContent()}</div>
                   </div>
                   <div className="row">
                        <div className="col-lg-8 col-12">

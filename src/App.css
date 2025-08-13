@@ -37,6 +37,12 @@ font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+
+/* @media screen and (min-width:1400) {
+  .container{
+  min-width:1380px!important
+}
+} */
 .light-color{
    color: #7b7b7f;
 }
@@ -47,11 +53,27 @@ h1, h2{
   color: #000000;
 }
 /* @import "./assets/css/NewsAndArticles.css";  */
+.brand img{
+  max-height: 80px;
+}
+@media screen and (max-width:991px) {
+  .brand img{
+  max-height: 50px;
+}
+
+}
+
 
 @media screen and (min-width:992px) {
   .spacing-top, .spacing-bottom{
   padding-top: 120px;
   
+}
+#navbarNav ul li a{
+  font-weight: 600;
+}
+#navbarNav ul li .active{
+  font-weight: 600;
 }
 }
 @media screen and (max-width:991px) {
@@ -99,7 +121,7 @@ h1, h2{
 }
 #mainNavbar ul li .active{
   color: var(--primay);
-  font-weight: 500;
+  font-weight: 600;
 
 }
 .nav-btn-style{
@@ -290,6 +312,41 @@ div#navbarNav ul li {
   background: var(--secondary)
 }
 
+span {}
+
+
+button.owl-prev  {
+    width: 40px;
+    height:40px;
+    background-color: #F86F03!important; 
+    display: grid;
+    place-items: center;
+  
+}
+button.owl-prev span{
+    /* font-size:30px; */
+    color: #ffffff;
+}
+button.owl-next  {
+    width: 40px;
+    height:40px;
+    background-color: #F86F03!important; 
+    display: grid;
+    place-items: center;
+  
+}
+#testmonital-owl
+.owl-nav{
+  margin-top: 30px;
+}
+/* .button.owl-next > img{
+  width: 8px!important;
+} */
+button.owl-next span{
+    /* font-size:30px; */
+    color: #ffffff;
+}
+
 /* *********secton 2******** */
 .button-container {
   background-color: #5867dd; /* Blue background */
@@ -447,7 +504,12 @@ overflow-x: scroll; */
    color: var(--white);
 
 }
+.stats-card{
+  border-radius: 15px;
+   color: var(--white);
+  padding: 26px;
 
+}
 .stats-card3{
   background-color: #47b34e;
   color: var(--white);
@@ -455,10 +517,28 @@ overflow-x: scroll; */
 .stats-card2{
   background-color: #1d8a8f;
   color: var(--white);
+  
+}
+.stats-title{
+  font-size: 35px;
+  font-weight: 600;
+}
+.stats-value{
+  font-size: 46px;
+}
+.stats-img {
+    align-self: end;
 }
 .stats-card1{
   background-color: #fea500;
   color: var(--white);
+  padding: 26px;
+  
+}
+@media screen and (min-width:992px) {
+  .stats-card{
+    min-height: 218px;
+  }
 }
 .stats-card img{
   max-width: 100px;
@@ -593,3 +673,59 @@ background-color: var(--secondary);
 .cardiology-owl .owl-dots{
   margin-top: 15px;
 }
+.doctor-cell-data{
+    font-size: 14px;
+    /* background-color: #525fe1; */
+
+}
+
+@media (min-width: 576px) {
+  .appoint-table-style.modal-dialog{
+    width: 85% !important;
+  }
+}
+.exampleModal1{
+  display: grid;
+  place-items: center;
+  max-height: 70%;
+}
+.modal-dialog1{
+  max-width: 80%;
+}
+
+/* -------checkbox----- */
+#checkbox2 input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* Checked style with green background and white tick */
+ #checkbox2 input[type="checkbox"]:checked {
+    background-color: #00c200; /* Bright green */
+    border-color: #00a300;
+  }
+    #checkbox2 input[type="checkbox"]:checked::after {
+    content: "✔";
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+    #checkbox2 input[type="checkbox"]:hover {
+    border-color: #888;
+  }
+
+  

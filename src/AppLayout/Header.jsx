@@ -19,11 +19,14 @@ const Header = () => {
       <nav className={`navbar navbar-expand-xl navbar-light bg-white shadow-sm  main-navbar ${scrollDown==true?'headerfix': ''}`  } id='mainNavbar'>
       <div className="container">
         
-        {/* Logo */}
-        <a className="navbar-brand d-flex align-items-center" href="/">
-          <img src={Logo} alt="Logo" height="40" className="me-4" />
+          {/* Logo */}
+          <div className="brand">
+             <a className="navbar-brand d-flex align-items-center" href="/">
+          <img src={Logo} alt="Logo"  className="me-4" />
        
         </a>
+          </div>
+       
 
         {/* Toggle button for mobile */}
         <button
