@@ -60,24 +60,7 @@ const TestimonialCard = () => {
                      </div>
                  </div>
             </SwiperSlide> 
-            <SwiperSlide>
-                 <div className="inner-testmonial">
-                     <div className="col-lg-8 col-12 pb-3   ">
-                         <p className="mb-4 testimonial-text">
-                             Dr. Stonehart is not only a great cardiologist but also a kind human
-                             being. He explained my condition clearly, eased my fears, and guided
-                             me through successful treatment.
-                         </p>
-                         <h4 className="fw-bold mb-0">Sarah Thomas</h4>
-                         <small className="text-muted">Mumbai</small>
-                         {/*
-                         <FaQuoteLeft className="quote-icon text-muted" /> */}
-                     </div>
-                     <div className="fix-user-img">
-                         <img src={testmonial1} alt="Testimonial " className="img-fluid testimonial-img" />
-                     </div>
-                 </div>
-            </SwiperSlide> 
+           
           
           </Swiper>
       </>
