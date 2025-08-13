@@ -4,7 +4,7 @@ import {
     NavLink,
     useNavigate,
 
-} from 'react-router-dom'
+} from 'react-router'
 
 const ErrorComp = () => {
     const error = useRouteError();
