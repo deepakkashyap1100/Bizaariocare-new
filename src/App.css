@@ -338,6 +338,10 @@ button.owl-next  {
 #testmonital-owl
 .owl-nav{
   margin-top: 30px;
+  max-width: 100px;
+  display: flex;
+  justify-content: space-between;
+  
 }
 /* .button.owl-next > img{
   width: 8px!important;
