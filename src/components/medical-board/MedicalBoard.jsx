@@ -30,8 +30,7 @@ return (
   <section className=''>
     <div className="container ">
       <div className="row"> 
-          <div className=" medical-tab-buttons mb-4"> 
-            
+          <div className=" medical-tab-buttons mb-4">  
             <button className={`cutom-tab-style ${activeTab==='tab1' ? 'activeTab' : 'gray-btn-style' }`} onClick={()=>
             setActiveTab('tab1')}>
             Cardiology

@@ -1,35 +1,30 @@
-import React, { useState } from 'react'
+import { useState } from 'react';
 import CommonBanner from '../UI/CommonBanner'
 import aboutBanner from '../assets/images/about/banner.png'
-import HospitalsPartnersList from '../components/hospitals-partners/HospitalsPartnersList'
+import MedicalBoardContent from '../components/medical-boardPage/MedicalBoardContent';
 
-
-
-
-
-const HospitalsPartners = () => {
-
-    const hospitalData = 
-        {
-        banner: aboutBanner,
-        title: 'Hospitals Partners',
-        desc:'Empowering hospitals, physicians, and patients with real-time communication and clinical collaboration—because better care starts with better connection.'
-    }
-    const [activeTab, setActiveTab] = useState('tab1');
-
-const renderContent = () => {
-switch (activeTab) {
-case 'tab1': return <div className="row"><HospitalsPartnersList/></div>;
-case 'tab2': return  <div className="row"><HospitalsPartnersList/></div>;
-case 'tab3': return <div className="row"><HospitalsPartnersList/></div>;
-case 'tab4': return <div className="row"><HospitalsPartnersList/></div>;
-case 'tab5': return <div className="row"><HospitalsPartnersList/></div>;
-case 'tab6': return <div className="row"><HospitalsPartnersList/></div>;
-case 'tab7': return <div className="row"><HospitalsPartnersList/></div>;
-return null;
-}
-};
+const MedicalBoardPage = () => {
+        const hospitalData = 
+            {
+            banner: aboutBanner,
+            title: 'Medical Board',
+            desc:'Empowering hospitals, physicians, and patients with real-time communication and clinical collaboration—because better care starts with better connection.'
+        }
+        const [activeTab, setActiveTab] = useState('tab1');
     
+    const renderContent = () => {
+    switch (activeTab) {
+    case 'tab1': return <div className="row"><MedicalBoardContent/></div>;
+    case 'tab2': return  <div className="row">test</div>;
+    case 'tab3': return <div className="row">test</div>;
+    case 'tab4': return <div className="row">test</div>;
+    case 'tab5': return <div className="row">test</div>;
+    case 'tab6': return <div className="row">test</div>;
+    case 'tab7': return <div className="row">test</div>;
+    return null;
+    }
+    };
+
   return (
       <>
           <section>
@@ -39,7 +34,7 @@ return null;
               <div className="container ">
                   <div className="row">
                        <div className="col-lg-8 col-12">
-                    <h2 className='fw-semibold '>Meet Our Hospitals Partners</h2>
+                    <h2 className='fw-semibold '>Meet Our Doctor Team</h2>
                     <p className='light-color'>Empowering hospitals, physicians, and patients with real-time communication and clinical collaboration—because better care starts with better connection.</p>
                 </div>
                   </div>
@@ -91,4 +86,4 @@ return null;
   )
 }
 
-export default HospitalsPartners
+export default MedicalBoardPage

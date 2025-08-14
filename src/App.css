@@ -1,5 +1,5 @@
 :root{
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@100;300;400;500;700&display=swap'); */
     /* --roboto: 'Roboto', sans-serif;     */
       line-height: 1.5;
     --opensans: 'Open Sans', sans-serif;
@@ -36,7 +36,13 @@ font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
-
+.theme-color{color:#525fe1}
+.decoration-none{
+  text-decoration: none;
+}
+.weight-600{
+  font-weight: 600;
+}
 /* @media screen and (min-width:1400) {
   .container{
   min-width:1380px!important
@@ -410,7 +416,7 @@ border:1px solid #ffffff;
 
 
 .cutom-tab-style {
-    padding: 14px;
+    padding: 10px 16px;
     /* margin: 10px; */
     /* width: 100%; */
     font-size: 14px;

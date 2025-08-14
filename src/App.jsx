@@ -10,6 +10,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router";
+import MedicalBoardPage from './pages/MedicalBoardPage';
+import NewsArticles from './pages/NewsArticles';
 
 
 export default function App() {
@@ -30,6 +32,14 @@ export default function App() {
         {
           path: '/partners',
           element: <HospitalsPartners />
+        },
+        {
+          path: '/medical-board',
+          element: <MedicalBoardPage />
+        },
+        {
+          path: '/news-articles',
+          element: <NewsArticles />
         },
 
       ]

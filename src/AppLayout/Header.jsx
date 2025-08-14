@@ -70,10 +70,10 @@ const Header = () => {
             </li>
             <li className="nav-item">
               
-                <NavLink to="/medical"  className='nav-link '>Medical Board</NavLink>
+                <NavLink to="/medical-board"  className='nav-link '>Medical Board</NavLink>
             </li>
             <li className="nav-item"> 
-                <NavLink to="/articles"  className='nav-link '>News & Articles</NavLink>
+                <NavLink to="/news-articles"  className='nav-link '>News & Articles</NavLink>
             </li>
             <li className="nav-item">
                 

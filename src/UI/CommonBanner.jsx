@@ -2,22 +2,23 @@
 import aboutBanner from '../assets/images/about/banner.png'
 
 import Aboutstyles from '../assets/css/about.module.css';
-const CommonBanner = () => {
-    // console.log(hospital)
+const CommonBanner = ({bannerData}) => {
+    // console.log(bannerData)
+    console.log(bannerData.title)
   return (
       <>
-              <section className={Aboutstyles.aboutBanner} style={{backgroundImage: `url(${aboutBanner})`}}>
+              <section className={Aboutstyles.aboutBanner} style={{backgroundImage: `url(${bannerData.banner})`}}>
                 <div className="container">
                   <div className="row">
                     <div className="col-lg-9 col-12 ">
                       <div className={Aboutstyles.bannerContent}>
-                        <h1 className={`text-white fw-bold `}>About US</h1>
-                        <p className='text-white'>Empowering hospitals, physicians, and patients with real-time communication and clinical collaboration—because better care starts with better connection.</p>
+                <h1 className={`text-white fw-bold `}>{bannerData.title }</h1>
+                <p className='text-white'>{bannerData.desc }</p>
                       </div>
                     </div>
                   </div>
                 </div>
-              </section>
+      </section> 
       </>
   )
 }

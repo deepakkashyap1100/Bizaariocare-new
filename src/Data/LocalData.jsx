@@ -12,6 +12,7 @@ import dominic3 from '../assets/images/dominic1.png';
 import dominic4 from '../assets/images/dominic1.png';
 import news1 from '../assets/images/news1.png';
 import awardImage1 from  '../assets/images/award.png'
+import novacare1 from  '../assets/images/novacare.png'
 
 export const sliderArray = [
     {
@@ -96,6 +97,46 @@ export const dominicArr = [
         Specializes: "Specializes in :  Interventional Cardiology, Heart Failure Management , Preventive Cardiology",
         image: dominic4
     },
+    {
+        id: 5,
+             name: "Dr. Dominic Stonehart",
+        exp: "Cardiologist | 15+ Years Experience",
+        location: "Fortis Hospital, Mumbai",
+        Specializes: "Specializes in :  Interventional Cardiology, Heart Failure Management , Preventive Cardiology",
+        image: dominic4
+    },
+    {
+        id: 6,
+             name: "Dr. Dominic Stonehart",
+        exp: "Cardiologist | 15+ Years Experience",
+        location: "Fortis Hospital, Mumbai",
+        Specializes: "Specializes in :  Interventional Cardiology, Heart Failure Management , Preventive Cardiology",
+        image: dominic4
+  },
+      {
+        id: 7,
+             name: "Dr. Dominic Stonehart",
+        exp: "Cardiologist | 15+ Years Experience",
+        location: "Fortis Hospital, Mumbai",
+        Specializes: "Specializes in :  Interventional Cardiology, Heart Failure Management , Preventive Cardiology",
+        image: dominic4
+    },
+    {
+        id: 8,
+             name: "Dr. Dominic Stonehart",
+        exp: "Cardiologist | 15+ Years Experience",
+        location: "Fortis Hospital, Mumbai",
+        Specializes: "Specializes in :  Interventional Cardiology, Heart Failure Management , Preventive Cardiology",
+        image: dominic4
+    },
+    {
+        id: 9,
+             name: "Dr. Dominic Stonehart",
+        exp: "Cardiologist | 15+ Years Experience",
+        location: "Fortis Hospital, Mumbai",
+        Specializes: "Specializes in :  Interventional Cardiology, Heart Failure Management , Preventive Cardiology",
+        image: dominic4
+    },
   
 ];
 
@@ -107,61 +148,70 @@ export const dominicArr = [
          title: "The trend was noticed during a survey by Bumble",
       desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
     },
-    {
+   {
+      id:2,
       category: "cardiology",
       img: news1,
         title: "The trend was noticed during a survey by Bumble",
       desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
     },
-    {
+   {
+      id:3,
       category: "cardiology",
       img: news1,
         title: "The trend was noticed during a survey by Bumble",
       desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
     },
-    {
+    {id:4,
       category: "orthopedics",
       img: news1,
         title: "Orthopedics Breakthroughs",
       desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
     },
-    {
+   {
+      id:5,
       category: "pediatrics",
       img: news1,
         title: "Pediatric Health Updates",
       desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
     },
-    {
+   {
+      id:6,
       category: "obgyn",
       img: news1,
         title: "Pediatric Health Updates",
       desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
     },
-    {
+   {
+      id:7,
       category: "obgyn",
       img: news1,
         title: "Pediatric Health Updates",
       desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
     },
-    {
+   {
+      id:8,
       category: "ent",
       img: news1,
         title: "Pediatric Health Updates",
       desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
     },
-    {
+   {
+      id:9,
       category: "plastic",
       img: news1,
         title: "Pediatric Health Updates",
       desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
     },
-    {
+   {
+      id:10,
       category: "plastic",
       img: news1,
         title: "Pediatric Health Updates",
       desc:'If you ask yourself what are some of your deal-breakers, AKA non-negotiables, when it comes to dating, there can be a lot of things ranging...'
     },
-    {
+   {
+      id:11,
       category: "neurology",
       img: news1,
         title: "Neurology Research",
@@ -169,6 +219,71 @@ export const dominicArr = [
     }
   ];
 
+export const hospitalPartnerData = [
+  
+      {
+        id: 1, 
+        name: "NovaCare Hospital",
+        exp: "Multi-specialty / Tertiary Care",
+        location: "123 Health Blvd, Los Angeles, CA",
+        hours:'Open 24/7  ',
+        Specializes: "Specializes in :  Interventional Cardiology, Heart Failure Management , Preventive Cardiology",
+        URL:  'www.novacarehealth.com ', 
+        image: novacare1
+    },
+      {
+        id: 2, 
+        name: "NovaCare Hospital",
+        exp: "Multi-specialty / Tertiary Care",
+        location: "123 Health Blvd, Los Angeles, CA",
+        hours:'Open 24/7  ',
+        Specializes: "Specializes in :  Interventional Cardiology, Heart Failure Management , Preventive Cardiology",
+        URL:  'www.novacarehealth.com ', 
+        image: novacare1
+    },
+      {
+        id: 3, 
+        name: "NovaCare Hospital",
+        exp: "Multi-specialty / Tertiary Care",
+        location: "123 Health Blvd, Los Angeles, CA",
+        hours:'Open 24/7  ',
+        Specializes: "Specializes in :  Interventional Cardiology, Heart Failure Management , Preventive Cardiology",
+        URL:  'www.novacarehealth.com ', 
+        image: novacare1
+    },
+      {
+        id: 4, 
+        name: "NovaCare Hospital",
+        exp: "Multi-specialty / Tertiary Care",
+        location: "123 Health Blvd, Los Angeles, CA",
+        hours:' Open 24/7  ',
+        Specializes: "Specializes in :  Interventional Cardiology, Heart Failure Management , Preventive Cardiology",
+        URL:  'www.novacarehealth.com ', 
+        image: novacare1
+    },
+      {
+        id: 5, 
+        name: "NovaCare Hospital",
+        exp: "Multi-specialty / Tertiary Care",
+        location: "123 Health Blvd, Los Angeles, CA",
+        hours:' Open 24/7  ',
+        Specializes: "Specializes in :  Interventional Cardiology, Heart Failure Management , Preventive Cardiology",
+        URL:  'www.novacarehealth.com ', 
+        image: novacare1
+    },
+      {
+        id: 6, 
+        name: "NovaCare Hospital",
+        exp: "Multi-specialty / Tertiary Care",
+        location: "123 Health Blvd, Los Angeles, CA",
+        hours:' Open 24/7  ',
+        Specializes: "Specializes in :  Interventional Cardiology, Heart Failure Management , Preventive Cardiology",
+        URL:  'www.novacarehealth.com ', 
+        image: novacare1
+    },
+  
+
+]
 export const awardsCertfication = [
      {
         id: 1,
