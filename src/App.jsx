@@ -12,6 +12,8 @@ import {
 } from "react-router";
 import MedicalBoardPage from './pages/MedicalBoardPage';
 import NewsArticles from './pages/NewsArticles';
+import ContactUs from './pages/ContactUs';
+
 
 
 export default function App() {
@@ -40,6 +42,10 @@ export default function App() {
         {
           path: '/news-articles',
           element: <NewsArticles />
+        },
+        {
+          path: '/contact',
+          element: <ContactUs />
         },
 
       ]

@@ -42,9 +42,9 @@ return (
                       <div className="bg-white ">{renderContent()}</div>
                 </div>
                 
-            <div className="row">
+            {/* <div className="row">
                
-            </div>
+            </div> */}
         </div>
     </section>
 </>

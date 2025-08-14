@@ -1,7 +1,8 @@
-:root{
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@100;300;400;500;700&display=swap'); */
+:root{
+
     /* --roboto: 'Roboto', sans-serif;     */
-      line-height: 1.5;
+      /* line-height: 1.5; */
     --opensans: 'Open Sans', sans-serif;
     --primay: #525fe2;
     --secondary: #f86f03;
@@ -14,6 +15,7 @@
     --gray3: #272727;
   
 }
+
 @font-face {
   font-family: "Roboto", sans-serif;
   font-style: NORMAL_OR_ITALIC;
@@ -21,7 +23,13 @@
   src: url(./assets/fonts/Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf) format('ttf');
   src: url(./assets/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf) format('ttf');
 }
- 
+ .roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+}
 *{
   margin: 0;
   padding: 0;
@@ -493,13 +501,22 @@ overflow-x: scroll; */
   border-radius: 10px;
 
 }
+.cardiology-card
+.profile-link{
+  text-decoration: none;
+  font-weight: 600;
+}
+.cardiology-card .doc-name{
+  color: #000000;
+  font-weight: 600;
+}
 
 .common-btn-dark{
    text-align: center;
     padding:  8px 10px;
     border-radius: 6px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
     /* flex: 1; */
     background-color: #f86f03;
@@ -519,7 +536,7 @@ overflow-x: scroll; */
     padding:  8px 10px;
     border-radius: 6px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
     flex: 1;
     /* background: var(--white); */
@@ -698,6 +715,7 @@ color:#7b7b7f;
 }
 .live-session video{
   max-height: 400px;
+      background: #3a3e4a;
 } 
 
 /* .medical-tab-buttons .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -712,7 +730,7 @@ background-color: var(--secondary);
  }
 @media screen and (min-width: 1200px) {
   .cardiology-owl .owl-stage, .doctor-slider .owl-stage{
-  margin-left: -50px!important; 
+  margin-left: -30px!important; 
 }
   
 }
@@ -779,5 +797,33 @@ background-color: var(--secondary);
     #checkbox2 input[type="checkbox"]:hover {
     border-color: #888;
   }
+  .contact-left-inner{
+    padding: 20px;
+  }
+  @media screen and (min-width:992px) {
+      .contact-left-inner{
+    padding: 36px;
+  }
+  }
 
-  
+
+
+form.contact-form-fields input, form.contact-form-fields textarea {
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+form.contact-form-fields input::placeholder, form.contact-form-fields textarea::placeholder {
+    color:#ffffff;
+    font-weight:100;
+}
+.contact-btn {
+    display: flex;
+    justify-content: end;
+    margin-top: 36px;
+}
+.contact-btn button {
+    padding-inline: 30px
+}

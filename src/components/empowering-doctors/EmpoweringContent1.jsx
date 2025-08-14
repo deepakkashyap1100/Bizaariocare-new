@@ -36,7 +36,7 @@ responsive: {
 },
 1200: {
     items: 3,
-    stagePadding: 50,
+    stagePadding: 30,
     margin:30,
 }
 }
@@ -54,7 +54,7 @@ responsive: {
                                       <p className="text-gray-700 text-start mb-1">
                                 {element.dsc}
                                 </p>
-                                <p><strong>{element.name }</strong></p>
+                                <p className=''><strong>{element.name }</strong></p>
                                 </div>
                           
                         </div>

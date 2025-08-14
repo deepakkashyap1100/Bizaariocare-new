@@ -36,7 +36,7 @@ dots: true,
 },
 1200: {
 items: 3,
-stagePadding: 50,
+stagePadding: 30,
 margin:30,
 }
 }
@@ -55,7 +55,7 @@ return (
                         <div className="exp" style={{fontSize:'12px'}}>{item.exp}</div>
                     </div>
                     <div className="profile-link">
-                        <a href="#" style={{fontSize:'12px'}}>View Profile</a>
+                        <a href="#" style={{fontSize:'12px'}} className='profile-link theme-color'>View Profile</a>
                     </div>
                 </div>
 
@@ -65,14 +65,14 @@ return (
                             <img src={locationIcon} alt="icon" style={{width:'24px'}} />
                         </div>
 
-                        <div style={{color:"#000000"}}>{item.location}</div>
+                        <div style={{color:"#000000", fontWeight:''}}>{item.location}</div>
                     </div>
                     <div className='d-flex'>
                         <div className='me-2'>
                             <img src={workIcon} alt="icon" style={{width:'24px'}} />
                         </div>
 
-                        <div><strong style={{color:"#000000"}}>Specializes in: </strong><span
+                        <div><span style={{color:"#000000"}}>Specializes in: </span><span
                                 style={{color:'#73747e'}}>{item.Specializes}</span></div>
                     </div>
                 </div>

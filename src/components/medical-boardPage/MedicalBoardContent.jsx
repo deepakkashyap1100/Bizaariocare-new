@@ -15,7 +15,7 @@ const MedicalBoardContent = () => {
                                         <div className="exp" style={{fontSize:'12px'}}>{item.exp}</div>
                                     </div>
                                     <div className="profile-link">
-                                        <a href="#" style={{fontSize:'12px'}}>View Profile</a>
+                                        <a href="#" style={{fontSize:'12px'}} className="theme-color decoration-none profile-link">View Profile</a>
                                     </div>
                                 </div>
                 
