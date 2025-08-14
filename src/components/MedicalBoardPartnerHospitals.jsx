@@ -13,17 +13,17 @@ const MedicalBoardPartnerHospitals = () => {
   };
   return (
       <>
-          <section className='spacing-top'>
+          <section className='spacing-top medical-board-partner-hospitals'>
               <div className="container">
                     <div className="row">
                   
                       <div className="col-lg-12 d-flex  align-items-center"> 
                           <div className="button-container tab-group-large">
-                              <button className={`btn btn-custom ${activeTab==='tab1' ? 'active-custom-tab' : '' }`}
+                              <button className={`btn btn-custom   ${activeTab==='tab1' ? 'active-custom-tab' : '' }`}
                                   onClick={()=> setActiveTab('tab1')}>
                             Medical Board
                               </button>
-                              <button className={`btn btn-custom ${activeTab==='tab2' ? 'active-custom-tab' : '' }`}
+                              <button className={`btn btn-custom  ${activeTab==='tab2' ? 'active-custom-tab' : '' }`}
                                   onClick={()=> setActiveTab('tab2')}>
                                  Partners Hospitals
                               </button>

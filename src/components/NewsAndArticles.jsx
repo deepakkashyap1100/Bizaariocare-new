@@ -32,7 +32,7 @@ const NewsAndArticles = () => {
         <div className=" news-inner">
           <div>
             <h2 className="fw-semibold ">News And Articles</h2>
-            <p className="light-color lmb-0">
+            <p className="light-color">
               Learn from leading doctors and specialists through focused,
               digestible video content.
             </p>

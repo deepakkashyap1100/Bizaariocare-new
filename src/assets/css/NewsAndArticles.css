@@ -11,10 +11,10 @@
   background-color: orange !important;
   border: none !important;
 }
-
+.news-section
 .card img {
   object-fit: cover;
-  height: 200px;
+  height: auto;
 }
 
 .card h6 {
@@ -31,7 +31,7 @@
 .news-inner{
   /* display: flex;
   justify-content: space-between; */
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 @media screen and (min-width:991px) {
   .news-inner{

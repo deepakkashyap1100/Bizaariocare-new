@@ -9,11 +9,15 @@ import {
 import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { TbWorld } from "react-icons/tb";
-import { MdEmail, MdPhone, MdLanguage } from "react-icons/md";
+// import { MdEmail, MdPhone, MdLanguage } from "react-icons/md";
 import { FaFigma } from "react-icons/fa";
 import "../assets/css/footer.css";
-import footerLogo from '../assets/images/footerlogo.png'
-import { NavLink } from "react-bootstrap";
+import footerLogo from '../assets/images/footer-logo.png'
+import socialIcon1 from '../assets/images/icons/social-icons/social.svg'
+import socialIcon2 from '../assets/images/icons/social-icons/social-1.svg'
+import socialIcon3 from '../assets/images/icons/social-icons/social-2.svg'
+import socialIcon4 from '../assets/images/icons/social-icons/social-3.svg'
+import {  NavLink } from 'react-router'
 
 
 const Footer = () => {
@@ -37,29 +41,37 @@ const Footer = () => {
             </p>
             <h6 className="fw-bold">Follow us</h6>
             <div className="d-flex gap-3 mt-2">
-              <FaFacebookF className="social-icon" />
+              {/* <FaFacebookF className="social-icon" />
               <FaTelegramPlane className="social-icon" />
               <FaInstagram className="social-icon" />
-             <FaFigma className="social-icon"/>
+             <FaFigma className="social-icon"/> */}
+             
+                  <a href=""><img src={socialIcon1} alt="" /></a>
+                  <a href=""><img src={socialIcon2} alt="" /></a>
+                  <a href=""><img src={socialIcon3} alt="" /></a>
+                  <a href=""><img src={socialIcon4} alt="" /></a>
+             
             </div>
           </div>
  
           <div className="col-lg-3 col-md-6">
             <h6 className="fw-bold mb-3"><MdOutlinePhoneInTalk /> Phone Number</h6>
-            <p className="mb-3 light-color"> +91 5252525252</p>
+            <p className="mb-3 light-color" tel="5252525252"> +91 5252525252</p>
 
             <h6 className="fw-bold mb-1"><MdOutlineMailOutline /> Email ID</h6>
-            <p className="mb-3 light-color">rjvijs42@gmail.com</p>
+            <a href=" mailto:rjvijs42@gmail.com"className="mb-3 light-color decoration-none" >rjvijs42@gmail.com</a>
 
-            <h6 className="fw-bold mb-1"><TbWorld /> Website</h6>
-            <p className="mb-0 light-color">www.papayapalette.com</p>
+            <h6 className="fw-bold mt-3"><TbWorld /> Website</h6>
+            <a className="mb-0 light-color decoration-none" href="https://papayapalette.com/" target="_blank">www.papayapalette.com</a>
           </div>
  
           <div className="col-lg-2 col-md-6">
             <h6 className="fw-bold mb-3">Company</h6>
             <ul className="list-unstyled ft-quick-link">
               {/* <NavLink to='/about'>About Us </NavLink> */}
-              <li>About Us</li>
+              <li>
+              <NavLink to='/about'>About Us</NavLink>
+              </li>
               <li>FAQs</li>
               <li>Contact Us</li>
             </ul>

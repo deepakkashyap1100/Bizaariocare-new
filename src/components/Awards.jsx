@@ -81,11 +81,15 @@ margin:10,
 
                             {/* Right Content */}
                             <div className="col-md-8  d-flex align-items-center">
-                                <div className="right-content ">
-                                    <h2 className="fw-semi-bold mb-1">
-                                    <img src={crt2} alt="" style={{maxWidth:'30px', height:'auto'}} /> Best Cardiologist 2022
-                                    </h2>
-                                    <h4 className="text-muted mb-3">Indian Medical Association</h4>
+                                      <div className="right-content ">
+                                          <div className='d-flex mb-3 align-items-center'>
+                                              <img src={crt2} alt="" style={{maxWidth:'25px', height:'auto'}} className='me-2' /> 
+                                                <h2 className="fw-bold mb-1 ">
+                                                Best Cardiologist 2022
+                                                </h2>
+                                          </div>
+                                          
+                                    <h4 className="text-muted mb-3 fw-semibold">Indian Medical Association</h4>
                                     <p className="mb-3">
                                         I has received multiple awards for excellence in cardiology and
                                         patient care, including recognition for clinical innovation and

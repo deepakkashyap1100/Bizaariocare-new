@@ -17,7 +17,7 @@ animateOut: "fadeOut",
 loop: true,
 // animateIn: 'flipInX',
 items: 1,
-// margin:30,
+margin:0,
 // stagePadding:30,
 // navText: [`<img src=${myprevimage}>` ,`<img src=${mynextimage}>`]
 };
