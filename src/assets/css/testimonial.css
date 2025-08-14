@@ -22,11 +22,31 @@
   opacity: 0.1;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .testimonial-img {
     border-radius: 0 0 1rem 1rem;
     height: 250px;
   }
+
+  #testmonital-owl .owl-nav button.owl-prev img{
+        width: 8px;
+    height: 15px;
+    
+}
+#testmonital-owl .owl-nav button.owl-prev {
+    height: 30px;
+    width:30px;
+}
+#testmonital-owl .owl-nav button.owl-next img{
+        width: 8px;
+    height: 15px;
+    
+}
+#testmonital-owl .owl-nav button.owl-next {
+    height: 30px;
+    width:30px;
+}
+
 }
   .testimonial-card{
   /* background-color: #edeefd; */

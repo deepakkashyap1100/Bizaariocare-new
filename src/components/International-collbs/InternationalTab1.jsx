@@ -8,7 +8,7 @@ const InternationalTab1 = () => {
       <div className='indian-tab-content'>
                 <div className="row">
                     <div className="col-md-4 col-12 mb-3 mb-md-0">
-                        <div className="stats-card1 stats-card  text-white d-flex align-items-center justify-content-between ">
+                        <div className="stats-card1 stats-card  text-white d-flex  justify-content-between ">
                             <div>
                                 <div className="mb-1 stats-title">Doctors</div>
                                  <h3 className="fw-bold stats-value">20k</h3>
@@ -20,7 +20,7 @@ const InternationalTab1 = () => {
                         </div>
                     </div>
                     <div className="col-md-4 col-12 mb-3 mb-md-0">
-                        <div className="stats-card2 stats-card  text-white d-flex align-items-center justify-content-between  ">
+                        <div className="stats-card2 stats-card  text-white d-flex  justify-content-between  ">
                             <div>
                                 <div className="mb-1 stats-title">Medical Associations</div>
                                  <h3 className="fw-bold stats-value">20k</h3>

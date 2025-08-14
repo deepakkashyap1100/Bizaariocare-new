@@ -5,7 +5,7 @@ const LiveSessionContent = () => {
   return (
       <>
           <div className='live-session'>
-                <video   controls="controls" autoplay="false"  width={'100%'} poster={poster} >
+                <video   controls="controls"   width={'100%'} poster={poster} >
                               <source src={videoFile} type="video/mp4"/>
                           </video>
         </div>

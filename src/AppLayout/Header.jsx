@@ -1,11 +1,23 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link, NavLink } from 'react-router'
 import langIcon from '../assets/images/icons/language.svg';
 import Logo from '../assets/images/logo1.png'; 
 //  import home from '../assets/css/home..module.css'; 
 
 const Header = () => {
-  const [scrollDown, setScrollDown]= useState(false);
+  const [scrollDown, setScrollDown] = useState(false);
+  // const [menuStatus, setMenuStatus] = useState(true);
+  // const myDivRef = useRef(null);
+
+  // console.log(myDivRef)
+
+  // function menuStatusFn() {
+  //   setMenuStatus(!menuStatus) 
+  // }
+
+  //  useEffect(() => {
+  //   myDivRef.current.style.classList.add('class-one'); 
+  // }, []);
 
   window.onscroll = function() {
     if (this.scrollY > 10) {
@@ -42,7 +54,7 @@ const Header = () => {
         </button>
 
         {/* Menu */}
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className= {`collapse navbar-collapse `} id="navbarNav">
           {/* Center links */}
           <ul className="navbar-nav mx-auto">
             <li > 

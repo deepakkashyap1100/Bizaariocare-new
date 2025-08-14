@@ -25,7 +25,32 @@ loop: true,
 items: 1,
 margin:10,
 // stagePadding:30,
-navText: [`<img src=${myprevimage}>` ,`<img src=${mynextimage}>`]
+    navText: [`<img src=${myprevimage}>`, `<img src=${mynextimage}>`],
+    responsive: {
+        
+0: {
+        // items: 10,
+        margin: 10,
+            // dots: true,
+    // nav: true,
+},
+600: {
+
+    // stagePadding: 30,
+    margin: 10,
+    // dots: true,
+},
+1000: {
+
+    // stagePadding: 60,
+    margin: 10,
+    // dots: true,
+},
+1200: { 
+    margin:10,
+}
+    
+    }
 };
 
   return (

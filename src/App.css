@@ -1,11 +1,10 @@
 :root{
-
-  
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap'); */
-    --roboto: 'Roboto', sans-serif;    
+    /* --roboto: 'Roboto', sans-serif;     */
+      line-height: 1.5;
     --opensans: 'Open Sans', sans-serif;
     --primay: #525fe2;
-    --secondary: #ff6c4e;
+    --secondary: #f86f03;
     --white: #ffffff;
     --black: #000000;
     --text-color: #121212;
@@ -66,7 +65,7 @@ h1, h2{
 
 @media screen and (min-width:992px) {
   .spacing-top, .spacing-bottom{
-  padding-top: 120px;
+  padding-top: 110px;
   
 }
 #navbarNav ul li a{
@@ -324,10 +323,15 @@ button.owl-prev  {
   margin-right: 10px;
 }
     #navbarNav ul li:hover a{
-      text-decoration: none;
+   
       color: var(--primay);
-    
+     
     }
+
+     #navbarNav ul li:hover {
+    text-decoration: none;
+     }
+
 button.owl-prev span{
     /* font-size:30px; */
     color: #ffffff;
@@ -543,6 +547,32 @@ overflow-x: scroll; */
   padding: 26px;
   
 }
+@media screen and (max-width: 991px) {
+  /* .stats-title{
+  font-size: 17px;
+  font-weight: 600;
+}
+.stats-value{
+  font-size: 30px;
+} */
+.stats-card1, .stats-card2, .stats-card3{
+  padding: 15px;
+}
+.stats-card{
+  flex-wrap: wrap;
+}
+}
+@media screen and (max-width: 1200px) {
+    .stats-title{
+  font-size: 17px;
+  font-weight: 600;
+}
+.stats-value{
+  font-size: 30px;
+}
+}
+
+
 @media screen and (min-width:992px) {
   .stats-card{
     min-height: 218px;

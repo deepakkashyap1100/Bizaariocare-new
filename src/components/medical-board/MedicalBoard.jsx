@@ -14,16 +14,13 @@ const [activeTab, setActiveTab] = useState('tab1');
 
 const renderContent = () => {
 switch (activeTab) {
-case 'tab1':
-return <div className="py-2">
-  <CardiologyTabContent />
-</div>;
-case 'tab2': return  <div className="py-2">  <CardiologyTabContent /> </div>;
-case 'tab3': return <div className="py-2">  <CardiologyTabContent /> </div>;
-case 'tab4': return <div className="py-2">  <CardiologyTabContent /> </div>;
-case 'tab5': return <div className="py-2">  <CardiologyTabContent /> </div>;
-case 'tab6': return <div className="py-2">  <CardiologyTabContent /> </div>;
-case 'tab7': return <div className="py-2">  <CardiologyTabContent /> </div>;
+case 'tab1': return <div><CardiologyTabContent /></div>;
+case 'tab2': return  <div>  <CardiologyTabContent /> </div>;
+case 'tab3': return <div>  <CardiologyTabContent /> </div>;
+case 'tab4': return <div>  <CardiologyTabContent /> </div>;
+case 'tab5': return <div>  <CardiologyTabContent /> </div>;
+case 'tab6': return <div>  <CardiologyTabContent /> </div>;
+case 'tab7': return <div>  <CardiologyTabContent /> </div>;
 return null;
 }
 };
