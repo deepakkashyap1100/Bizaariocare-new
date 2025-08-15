@@ -73,7 +73,7 @@ const Header = () => {
                 <li><a className="dropdown-item" href="/">Hindi</a></li>
               </ul>
             </div>
-            <a href="/login" className="btn nav-btn-style">Login</a>
+            <a href="https://bizaariocare.com/signin" target='_blank' className="btn nav-btn-style">Login</a>
             <a href="/signup" className="btn nav-btn-style2">Sign Up</a>
           </div>
         </div>
