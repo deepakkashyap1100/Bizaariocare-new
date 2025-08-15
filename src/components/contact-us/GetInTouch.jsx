@@ -6,16 +6,15 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from "re
 import contact1 from '../../assets/images/contact1.png'
 import contact2 from '../../assets/images/contact2.png'
 import contactIcon1 from '../../assets/images/icons/contact-icon1.svg'
-const ContactUsSection1 = () => {
+const GetInTouch = () => {
   return (
     <>
         <div className="container py-3" style={{ fontFamily: "Inter, sans-serif" }}>
-            <div className="row g-4">
-
+            <div className="row g-4"> 
                 {/* Left Card - Get Help */}
                 <div className="col-lg-6">
 
-                    <div className="p-4 rounded-4 text-white contact-left-card" style={{
+                    <div className="p-sm-4 rounded-4 text-white contact-left-card" style={{
             //   backgroundColor: "#000",
               backgroundImage:` URL(${contact1})`,
               backgroundSize: "cover",
@@ -32,7 +31,7 @@ const ContactUsSection1 = () => {
 
                         {/* Content */}
                           <div className='contact-left-inner' style={{ position: "relative", zIndex: 2 }}>
-                              <div className='d-flex align-items-center'>
+                              <div className='d-flex align-items-center justify-content-between '>
                                   <div className=''> 
                                       <h4 className="mb-2">Get Help</h4>
                                       <p style={{ fontSize: "14px", color: "#ccc" }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod. </p>
@@ -43,7 +42,7 @@ const ContactUsSection1 = () => {
                               </div>
 
                             <button className="btn text-white mb-4" style={{ background: "#FF7A00" }}>Email Now</button>
-                            <div className='d-flex justify-content-between'>
+                            <div className='d-flex justify-content-between flex-column flex-sm-row'>
                                 <div className='contact-group'>
                                     <p className="mb-1 fw-semibold">
                                         <FaPhoneAlt className="me-2" /> Phone Number</p>
@@ -79,11 +78,10 @@ const ContactUsSection1 = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-
+                </div> 
                 {/* Right Card - Get In Touch Form */}
                 <div className="col-lg-6">
-                      <div className="p-4 rounded-4 h-100 text-white" style={{
+                      <div className="p-sm-4 p-3 py-4 rounded-4 h-100 text-white" style={{
                              backgroundImage:` URL(${contact2})`,
               backgroundColor: "#111",
               position: "relative",
@@ -126,4 +124,4 @@ const ContactUsSection1 = () => {
   )
 }
 
-export default ContactUsSection1
+export default GetInTouch
