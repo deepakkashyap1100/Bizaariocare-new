@@ -127,12 +127,7 @@
   padding: 50px 40px;
 }
 
-.fix-user-img {
-    position: absolute;
-    left: 71%;
-   top: 50%;
-        transform: translateY(-163px);
-}
+
 
 .fix-user-img img {
     max-width: 240px;
@@ -167,4 +162,13 @@
 
 ul li:hover{
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .fix-user-img {
+    position: absolute;
+    left: 71%;
+   top: 50%;
+        transform: translateY(-163px);
+}
+  
 }

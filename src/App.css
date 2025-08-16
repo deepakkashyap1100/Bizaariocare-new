@@ -67,26 +67,33 @@ h1, h2{
 }
 
 
-
-
-@media screen and (min-width:992px) {
-  .spacing-top, .spacing-bottom{
-  padding-top: 110px;
-  
-}
-}
-@media screen and (max-width:991px) {
-  .spacing-top, .spacing-bottom{
-  padding-top: 60px;
-  
-}
-}
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
   .spacing-top, .spacing-bottom{
   padding-top: 50px;
   
 }
+} */
+/* @media screen and (max-width:991px) {
+  .spacing-top, .spacing-bottom{
+  padding-top: 60px;
+  
 }
+} */
+ @media (min-width: 1px) and (max-width: 992px) {
+  .spacing-top, .spacing-bottom{
+  padding-top: 80px !important;
+  
+}
+}
+
+
+@media screen and (min-width:992px)  {
+  .spacing-top, .spacing-bottom{
+  padding-top: 120px;
+  
+}
+}
+
 
 
 .doctor-slider p{

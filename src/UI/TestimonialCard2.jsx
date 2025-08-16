@@ -56,8 +56,8 @@ const TestimonialCard = () => {
             {testmonialData.map((item) => {
                 return ( 
                   <div className="inner-testmonial " key={item.id}>
-                    <div className="row">
-                      <div className="col-lg-8 col-12 pb-3   ">
+                    <div className="row g-4">
+                      <div className="col-xl-8 col-12   ">
                         <div className="test-card">
                           <p className="testimonial-text">
                             {item.review}
@@ -74,7 +74,7 @@ const TestimonialCard = () => {
 
                         </div>
                       </div>
-                      <div className="col-lg-4 col-12">
+                      <div className="col-xl-4 col-12">
                         <div className="fix-user-img">
                           <img src={testmonial1} alt="Testimonial" className="img-fluid testimonial-img" />
                         </div>
