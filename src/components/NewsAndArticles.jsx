@@ -31,10 +31,8 @@ const NewsAndArticles = () => {
         {/* Header */}
         <div className=" news-inner">
           <div>
-            <h2 className="fw-semibold ">News And Articles</h2>
-            <p className="light-color">
-              Learn from leading doctors and specialists through focused,
-              digestible video content.
+            <h2 className="fw-semibold title ">News And Articles</h2>
+            <p className="">  Learn from leading doctors and specialists through focused, digestible video content.
             </p>
           </div>
           <div>

@@ -43,7 +43,7 @@ return (
             // centerMode={false}
             
             containerClass="" 
-            itemClass="me-0 pe-4"   
+            itemClass="pe-md-4 px-1"   
             arrows={false}  
             infinite={true}  
             renderDotsOutside={true} 

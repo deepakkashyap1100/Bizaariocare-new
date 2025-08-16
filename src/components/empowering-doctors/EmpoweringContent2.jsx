@@ -20,7 +20,8 @@ const EmpoweringContent2 = () => {
         },
         mobile: {
             breakpoint: { max: 767, min: 0 },
-            items: 1
+            items: 1,
+           
         }
     };
    
@@ -37,9 +38,9 @@ const EmpoweringContent2 = () => {
                 //  pauseOnHover={false} 
                 //  centerMode={false}
                 containerClass=" carousel-container" 
-                itemClass="me-0 pe-4"   
+                itemClass="pe-md-4 px-1"   
                 arrows={false} 
-                showDots={false}
+                // showDots={false}
                 infinite={true}  
                 renderDotsOutside={true} 
                 partialVisible={true}

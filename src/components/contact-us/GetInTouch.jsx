@@ -10,7 +10,7 @@ const GetInTouch = () => {
   return (
     <>
         <div className="container py-3" style={{ fontFamily: "Inter, sans-serif" }}>
-            <div className="row g-4"> 
+            <div className="row g-4">
                 {/* Left Card - Get Help */}
                 <div className="col-lg-6">
 
@@ -30,16 +30,17 @@ const GetInTouch = () => {
             }}></div>
 
                         {/* Content */}
-                          <div className='contact-left-inner' style={{ position: "relative", zIndex: 2 }}>
-                              <div className='d-flex align-items-center justify-content-between '>
-                                  <div className=''> 
-                                      <h4 className="mb-2">Get Help</h4>
-                                      <p style={{ fontSize: "14px", color: "#ccc" }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod. </p>
-                                  </div>
-                                  <div className=''>
-                                      <img src={contactIcon1} alt="" className='img-fluid' />
-                                  </div> 
-                              </div>
+                        <div className='contact-left-inner' style={{ position: "relative", zIndex: 2 }}>
+                            <div className='d-flex align-items-center justify-content-between '>
+                                <div className=''>
+                                    <h4 className="mb-2">Get Help</h4>
+                                    <p style={{ fontSize: "14px", color: "#ccc" }}> Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit. Sed do eiusmod. </p>
+                                </div>
+                                <div className='headphon-icon'>
+                                    <img src={contactIcon1} alt="" className='img-fluid' />
+                                </div>
+                            </div>
 
                             <button className="btn text-white mb-4" style={{ background: "#FF7A00" }}>Email Now</button>
                             <div className='d-flex justify-content-between flex-column flex-sm-row'>
@@ -78,10 +79,10 @@ const GetInTouch = () => {
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
                 {/* Right Card - Get In Touch Form */}
                 <div className="col-lg-6">
-                      <div className="p-sm-4 p-3 py-4 rounded-4 h-100 text-white" style={{
+                    <div className="p-sm-4 p-3 py-4 rounded-4 h-100 text-white" style={{
                              backgroundImage:` URL(${contact2})`,
               backgroundColor: "#111",
               position: "relative",
@@ -108,12 +109,12 @@ const GetInTouch = () => {
                                 <input type="text" placeholder="Full Name" className="form-control mb-3" />
                                 <input type="email" placeholder="Email Address" className="form-control mb-3" />
                                 <input type="text" placeholder="Phone No" className="form-control mb-3" />
-                                  <textarea placeholder="Brief Bio" rows={4} className="form-control mb-3"></textarea>
-                                  <div className='contact-btn'>
-                                       <button type="submit" className="btn text-white"
-                                    style={{ background: "#FF7A00" }}>Send</button>
-                                  </div>
-                               
+                                <textarea placeholder="Brief Bio" rows={4} className="form-control mb-3"></textarea>
+                                <div className='contact-btn'>
+                                    <button type="submit" className="btn text-white"
+                                        style={{ background: "#FF7A00" }}>Send</button>
+                                </div>
+
                             </form>
                         </div>
                     </div>

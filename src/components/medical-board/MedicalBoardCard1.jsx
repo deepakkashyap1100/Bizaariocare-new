@@ -3,6 +3,7 @@ import { doctorArr, dominicArr } from '../../Data/LocalData';
 import OwlCarousel from "react-owl-carousel";
 import locationIcon from "../../assets/images/icons/location-pin-alt-1-svgrepo-com 1.png"
 import workIcon from "../../assets/images/icons/work.png"
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
