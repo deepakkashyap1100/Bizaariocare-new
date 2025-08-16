@@ -4,9 +4,6 @@ import Footer from './Footer';
 import { Outlet, useNavigation } from 'react-router';
 import Header from './Header';
 
-// import Header from './Header'
-// import Footer from './Footer';
-
 const Layout = () => {
     const loadingNavigation= useNavigation();
     if(loadingNavigation.state=== 'loading'){
@@ -15,8 +12,7 @@ const Layout = () => {
 
   return (
     <>
-      <Header /> 
-  
+    <Header />  
     <Outlet/>    
     <Footer/>
 </>

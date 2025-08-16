@@ -1,7 +1,14 @@
 import "../assets/css/testimonial.css";
 import testmonial1 from '../assets/images/testmonial1.png'
 import quote from '../assets/images/icons/quot.png'
-import OwlCarousel from "react-owl-carousel";
+// import OwlCarousel from "react-owl-carousel";
+// import { Pagination } from 'react-bootstrap';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar'; 
+import { A11y, Navigation, Scrollbar, Pagination, Autoplay} from 'swiper/modules';
 import { testmonialData } from "../Data/LocalData";
 
 
@@ -26,10 +33,32 @@ const TestimonialCard = () => {
                               digestible video content.</p>
                       </div>
 
-                      <OwlCarousel className="owl-theme " id='testmonital-card-owl' {...options}>
+     <Swiper
+           //         autoplay={{
+           //   delay: 2500,
+           //   disableOnInteraction: false,
+           // }}
+               // install Swiper modules
+               modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+               spaceBetween={0}
+               slidesPerView={1}
+               // navigation
+               pagination={{ clickable: false }}
+               // scrollbar={{ draggable: false }}
+               onSwiper={(swiper) => console.log(swiper)}
+               //   onSlideChange={() =>{ }
+           //        breakpoints={{
+           //   769: {
+           //     slidesPerView: 2,
+           //     slidesPerGroup: 3,
+           //   },
+           // }}
+                        >
+                              
                           {testmonialData.map((item) => {
-                          return (<div>
-                              <div className="inner-testmonial" key={item.id}>
+                          return ( <SwiperSlide style={{overflow: "hidden"}}>
+                              <div className="inner-testmonial " key={item.id}>
+                                  <div className="row"> 
                                   <div className="col-lg-8 col-12 pb-3   ">
                                       <div className="test-card">
                                           <p className="testimonial-text">
@@ -47,21 +76,25 @@ const TestimonialCard = () => {
 
                                       </div>
                                   </div>
-                                  {/* <div className="col-lg-4 col-12"> */}
-                                      <div className="fix-user-img">
+                                  <div className="col-lg-4 col-12">
+                                     
+                                      {/* <div className="fix-user-img">
 
-                                          <img src={testmonial1} alt="Testimonial "
+                                        
+                                      </div>  */}
+   <img src={testmonial1} alt="Testimonial "
                                               className="img-fluid testimonial-img" />
-                                      </div>
-
-                                  {/* </div> */}
+                                  </div>
 
                               </div>
+                              </div>
 
-                          </div>
+                       
+                              </SwiperSlide>
                           )
                           })}
-                      </OwlCarousel>
+                                
+                      </Swiper>
 
                   </div>
               </div>

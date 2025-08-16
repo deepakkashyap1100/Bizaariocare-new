@@ -1,12 +1,8 @@
 import { NavLink } from "react-router"
 
 
-const NewsArticleSingle = ({
-    id,
-    img, title, desc,
-    article
-}) => {
-    console.log(id)
+const NewsArticleSingle = ({ id, img, title, desc, article }) => {
+
   return (
       <>
      

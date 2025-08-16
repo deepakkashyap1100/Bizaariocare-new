@@ -1,20 +1,27 @@
 import React from 'react'
-import TestimonialCard from '../UI/TestimonialCard'
+// import TestimonialCard from '../UI/TestimonialCard'
+import TestimonialCard2 from '../UI/TestimonialCard2'
 
 const Testimonial = () => {
-  return (
-      <>
-          <section className='spacing-top testmonial-section ' >
-              <div className='testimonial-card'> 
+  return(
+        <>
+          <section className='spacing-top testmonial-section '>
+            <div className='testimonial-card'>
               <div className="container ">
-                  <div className="row">
-                      <TestimonialCard/>
+                <div className="row">
+                  <div className="col-12">
+                    <h2 className='fw-semibold '>Patients Testimonials</h2>
+                    <p className='light-color mb-0'>Learn from leading doctors and specialists through focused,
+                      digestible video content.</p>
                   </div>
-                  </div>
+                </div> 
+                <div className="row">
+                  <TestimonialCard2/>
                 </div>
+              </div>
+            </div>
           </section>
         </>
   )
 }
-
 export default Testimonial

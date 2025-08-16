@@ -1,33 +1,30 @@
 import React, { useState } from 'react';
-import CardiologyTabContent from '../CardiologyTabContent';
+import CardiologyTabContent from './MedicalBoardCard1';
+import MedicalBoardCard2 from './MedicalBoardCard2';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-// import { Pagination } from 'react-bootstrap';
-import { A11y, Navigation, Scrollbar, Pagination, } from 'swiper/modules';
 
 const MedicalBoard = () => {
 const [activeTab, setActiveTab] = useState('tab1');
 
 const renderContent = () => {
 switch (activeTab) {
-case 'tab1': return <div><CardiologyTabContent /></div>;
-case 'tab2': return  <div>  <CardiologyTabContent /> </div>;
-case 'tab3': return <div>  <CardiologyTabContent /> </div>;
-case 'tab4': return <div>  <CardiologyTabContent /> </div>;
-case 'tab5': return <div>  <CardiologyTabContent /> </div>;
-case 'tab6': return <div>  <CardiologyTabContent /> </div>;
-case 'tab7': return <div>  <CardiologyTabContent /> </div>;
+  case 'tab1': return <div>
+    {/* <CardiologyTabContent /> */}
+    <MedicalBoardCard2 />
+  </div>;
+case 'tab2': return  <div> <MedicalBoardCard2 />  </div>;
+case 'tab3': return <div>  <MedicalBoardCard2 /> </div>;
+case 'tab4': return <div>  <MedicalBoardCard2 /> </div>;
+case 'tab5': return <div>  <MedicalBoardCard2 /> </div>;
+case 'tab6': return <div>  <MedicalBoardCard2 /> </div>;
+case 'tab7': return <div>  <MedicalBoardCard2 /> </div>;
 return null;
 }
 };
 
 return (
 <>
-  <section className=''>
+  <div className=''>
     <div className="container ">
       <div className="row"> 
           <div className=" medical-tab-buttons mb-4">  
@@ -66,10 +63,10 @@ return (
             Otorhinolaryngology
           </button> 
         </div>  
-        <div style={{padding:0}}>{renderContent()}</div>
+        <div style={{padding:0}} className='position-relative'>{renderContent()}</div>
       </div>
     </div>
-  </section>
+  </div>
 </>
 );
 };

@@ -11,6 +11,7 @@ import { A11y, Navigation, Scrollbar, Pagination, Autoplay} from 'swiper/modules
 import award from  '../../assets/images/award.png'
 import crt2 from '../../assets/images/icons/crt2.png'
 import { Card } from 'react-bootstrap';
+import '../../assets/css/awards-certification.css'
 
 const AwardsSlider = () => {
   return (

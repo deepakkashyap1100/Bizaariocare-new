@@ -31,3 +31,16 @@
 .appoint-doc-tabs{
     overflow: hidden;
 }
+
+.medical-board-partner-hospitals ul.react-multi-carousel-dot-list {
+    bottom: -42px;
+} 
+.medical-board-partner-hospitals .react-multi-carousel-dot button{
+  background-color: rgb(209, 209, 209);
+  border-color: rgb(209, 209, 209);
+}
+.medical-board-partner-hospitals .react-multi-carousel-dot--active button{
+  background-color: #f86f03;
+  border-color: #f86f03;
+}
+

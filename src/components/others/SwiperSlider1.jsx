@@ -11,7 +11,7 @@ import { sliderArray } from '../../Data/LocalData';
 const SwiperSlider1 = () => {
   return (
       <>
-          <h1>swiper slider</h1>
+   
           <Swiper
         //         autoplay={{
         //   delay: 2500,
@@ -74,7 +74,8 @@ const SwiperSlider1 = () => {
                           )
                           }
                           )}
-            </Swiper>
+        
+              </Swiper>
           
       </>
   )

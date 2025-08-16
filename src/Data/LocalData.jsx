@@ -1,4 +1,4 @@
-import slide1 from '../assets/images/slider1.png';
+import slide1 from '../assets/images/banner1.png'
 import slide2 from '../assets/images/banner2.png';
 import slide3 from '../assets/images/banner3.png';
 
@@ -42,6 +42,22 @@ export const sliderArray = [
         bannerTitle: "Where Doctors Collaborate, Patients Thrive 3" , 
         dsc: 'lm ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
     },
+    {
+        id: 4,
+        sliderImage:  {
+            backgroundImage: `url(${slide1})`, 
+          },
+        bannerTitle: "Where Doctors Collaborate, Patients Thrive 3" , 
+        dsc: 'lm ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
+    },
+    {
+        id: 5,
+        sliderImage:  {
+            backgroundImage: `url(${slide2})`, 
+          },
+        bannerTitle: "Where Doctors Collaborate, Patients Thrive 3" , 
+        dsc: 'lm ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
+    },
 ];
 
 export const doctorArr = [
@@ -59,6 +75,11 @@ export const doctorArr = [
     },
     {
         id: 3,
+            name: "JBy Doctor Malik",
+        dsc: "Doctor Mike hosts the AMA Tribute to the Medical School Class of 2023 ",
+        image: doctor3
+    },
+        {id: 4,
             name: "JBy Doctor Malik",
         dsc: "Doctor Mike hosts the AMA Tribute to the Medical School Class of 2023 ",
         image: doctor3
@@ -296,6 +317,33 @@ export const awardsCertfication = [
         date: '15/05/2022',
         crtLink: '' 
   },
+     {
+        id: 2,
+        image: awardImage1,
+        title1: "Best Cardiologist 2022",
+        title2:'Indian Medical Association',
+        dsc: 'I has received multiple awards for excellence in cardiology and patient care, including recognition for clinical innovation and compassionate service. His work continues to be honored by leading medical associations.',
+        date: '15/05/2022',
+        crtLink: '' 
+  },
+     {
+        id: 3,
+        image: awardImage1,
+        title1: "Best Cardiologist 2022",
+        title2:'Indian Medical Association',
+        dsc: 'I has received multiple awards for excellence in cardiology and patient care, including recognition for clinical innovation and compassionate service. His work continues to be honored by leading medical associations.',
+        date: '15/05/2022',
+        crtLink: '' 
+  },
+     {
+        id: 4,
+        image: awardImage1,
+        title1: "Best Cardiologist 2022",
+        title2:'Indian Medical Association',
+        dsc: 'I has received multiple awards for excellence in cardiology and patient care, including recognition for clinical innovation and compassionate service. His work continues to be honored by leading medical associations.',
+        date: '15/05/2022',
+        crtLink: '' 
+  },
   ]
 export const testmonialData = [
      {
@@ -319,4 +367,38 @@ export const testmonialData = [
         testmonialUser:'Sarah Thomas', 
         location: 'Mumbai' 
   },
-  ]
+]
+
+export const awardSliderData = [
+     {
+    id: 1,
+    title: 'Best Cardiologist 2022',
+    subTitle:'Indian Medical Association',
+    desc: "I has received multiple awards for excellence in cardiology and patient care, including recognition for clinical innovation and compassionate service. His work continues to be honored by leading medical associations.",
+  
+  },
+     {
+    id: 2,
+    title: 'Best Cardiologist 2022',
+    subTitle:'Indian Medical Association',
+    desc: "I has received multiple awards for excellence in cardiology and patient care, including recognition for clinical innovation and compassionate service. His work continues to be honored by leading medical associations.",
+  
+  },
+     {
+    id: 3,
+    title: 'Best Cardiologist 2022',
+    subTitle:'Indian Medical Association',
+    desc: "I has received multiple awards for excellence in cardiology and patient care, including recognition for clinical innovation and compassionate service. His work continues to be honored by leading medical associations.",
+  
+  },
+     {
+    id: 4,
+    title: 'Best Cardiologist 2022',
+    subTitle:'Indian Medical Association',
+    image: testmonialImage1,
+    desc: "I has received multiple awards for excellence in cardiology and patient care, including recognition for clinical innovation and compassionate service. His work continues to be honored by leading medical associations.",
+  
+  },
+     
+]
+  

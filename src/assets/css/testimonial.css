@@ -1,3 +1,16 @@
+:root{
+    --primay: #525fe2;
+    --secondary: #f86f03;
+    --white: #ffffff;
+    --black: #000000;
+    --text-color: #121212;
+    --border-radius: 4px;
+    --gray1: #a6a6a6;
+    --gray2: #4e4e4e;
+    --gray3: #272727;
+  
+}
+
 .bg-light-purple {
   background-color: #f5f4fd;
 }
@@ -140,6 +153,18 @@
 }
 
 }
-.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
+.testmonial-section .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
   bottom: -30px;
+}
+.testmonial-section .react-multi-carousel-dot button{
+  background-color: rgb(209, 209, 209);
+  border-color: rgb(209, 209, 209);
+}
+.testmonial-section .react-multi-carousel-dot--active button{
+  background-color: #f86f03;
+  border-color: #f86f03;
+}
+
+ul li:hover{
+  text-decoration: none;
 }

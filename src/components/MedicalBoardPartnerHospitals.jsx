@@ -15,8 +15,7 @@ const MedicalBoardPartnerHospitals = () => {
       <>
           <section className='spacing-top medical-board-partner-hospitals'>
               <div className="container">
-                    <div className="row">
-                  
+                    <div className="row"> 
                       <div className="col-lg-12 d-flex  align-items-center"> 
                           <div className="button-container tab-group-large">
                               <button className={`btn btn-custom   ${activeTab==='tab1' ? 'active-custom-tab' : '' }`}

@@ -1,42 +1,28 @@
 import React from 'react'
-import Hero from '../components/Hero'
-import Empowering from '../components/Empowering'
-import MedicalBoard from '../components/medical-board/MedicalBoard'
-import New from '../components/NewsAndArticles'
+// import Hero from '../components/Hero'
+// import New from '../components/NewsAndArticles'
 import InterCollabs from '../components/InterCollabs'
-import SwiperSlider1 from '../components/others/SwiperSlider1'
 import LiveSessions from '../components/LiveSessions'
 import NewsAndArticles from '../components/NewsAndArticles'
-
 import Awards from '../components/Awards'
-import AwardsSlider from '../components/awards-certification/AwardsSlider'
 import Testimonial from '../components/Testimonial'
 import MedicalBoardPartnerHospitals from '../components/MedicalBoardPartnerHospitals'
-import DoctorAppointmentTable from '../UI/DoctorAppointmentTable'
-
-import BookingAppointment from '../UI/BookingAppointment'
+import Empowering from '../components/Empowering'
+import Hero2 from '../components/others/Hero2'
 
 
 const Home = () => {
   return (
       <>
-          <Hero />
+      {/* <Hero /> */}
+      <Hero2/>
       <Empowering />
       <MedicalBoardPartnerHospitals/>
-      {/* <MedicalBoard /> */}
-      {/* Cardiology */}
       <InterCollabs />
-      <LiveSessions/>
-     
+      <LiveSessions/> 
       <NewsAndArticles />
       <Awards />
-      <Testimonial />
-      {/* <DoctorAppointmentTable /> */}
-      {/* <BookingAppointment/> */}
-       {/* <New /> */}
-      {/* <SwiperSlider1/> */}
-
-      {/* <AwardsSlider/> */}
+      <Testimonial /> 
       </>
   )
 }

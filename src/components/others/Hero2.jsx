@@ -1,29 +1,52 @@
-import React from 'react'
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
-import "../assets/css/hero.css";
-import { sliderArray } from '../Data/LocalData';
 
-const Hero = () => {
-        const options = {
-        dots: true,
-        nav: false,
-        autoplay: false,
-        mouseDrag: false,
-        smartSpeed: 1000,
-        animateOut: "fadeOut",
-        loop: true,
-        // animateIn: 'flipInX',
-        items: 1,
-        margin:0,
-        // stagePadding:30,
-        // navText: [`<img src=${myprevimage}>` ,`<img src=${mynextimage}>`]
-        };
+import "../../assets/css/hero.css";
+import { sliderArray } from '../../Data/LocalData';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import "../../assets/css/hero.css";
+const Hero2 = () => {
+        const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 1
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 1
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
 return (
 <>
-    <section className="hero-section"> 
-        <OwlCarousel className="owl-theme " id='hero-slider' {...options}>
+        <section className="hero-section"> 
+             <div id='hero-slider' >
+               <Carousel
+                    removeArrowOnDeviceType={["tablet", "mobile"]}
+                    responsive={responsive}
+                                    // autoPlay={false}
+                                    // autoPlaySpeed={3000}
+                                    // transitionDuration={2000} 
+                                    //additionalTransfrom={-50 * 3}
+                                    //  pauseOnHover={false} 
+                                    containerClass=" p-0 " 
+                                    itemClass=""   
+                                    arrows={false}
+                                    
+                                    showDots={true}
+                                    infinite={true}  
+                                    renderDotsOutside={false} 
+                                  partialVisible={false}
+                                   centerMode={false}
+                                    >
+       
             {sliderArray.map((element)=> {
                 return(
                     <div key={element.id}> 
@@ -61,10 +84,12 @@ return (
             )
             }
             )}
-        </OwlCarousel>
+               
+            </Carousel>
+             </div>
     </section>
 </>
 )
 }
 
-export default Hero
+export default Hero2

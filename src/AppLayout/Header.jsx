@@ -2,10 +2,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link, NavLink } from 'react-router'
 import langIcon from '../assets/images/icons/language.svg';
 import Logo from '../assets/images/logo1.png'; 
-//  import home from '../assets/css/home..module.css'; 
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
-
+import '../assets/css/header.css'
 const Header = () => {
 
   const [expanded, setExpanded] = useState(false);
@@ -46,7 +45,7 @@ const Header = () => {
         </button>
 
         {/* Menu */}
-          <div className={`collapse navbar-collapse ${expanded ? "show" : ""}`} id="navbarNav">
+          <div className={`collapse navbar-collapse pb-3 pb-xl-0 ${expanded ? "show" : ""}`} id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li><NavLink onClick={handleClose} to="/"  className='nav-link ' >Home</NavLink></li>
             <li className="nav-item">  <NavLink onClick={handleClose} to="/about" className='nav-link '>About</NavLink> </li>

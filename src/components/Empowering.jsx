@@ -1,14 +1,21 @@
 import React, { useState } from 'react'
 import EmpoweringContent1 from './empowering-doctors/EmpoweringContent1';
+import EmpoweringContent2 from './empowering-doctors/EmpoweringContent2';
 
 const Empowering = () => {
      const [activeTab, setActiveTab] = useState('tab1');
         
         const renderContent = () => {
         switch (activeTab) {
-            case 'tab1': return <div> <EmpoweringContent1/> </div>
+            case 'tab1': return <div>
+                {/* <EmpoweringContent1 /> */}
+                <EmpoweringContent2 />
+            </div>
                     
-            case 'tab2':return <div> <EmpoweringContent1/> </div>
+            case 'tab2': return <div>
+                {/* <EmpoweringContent1 /> */}
+                <EmpoweringContent2 />
+            </div>
             return null;
         }
       };

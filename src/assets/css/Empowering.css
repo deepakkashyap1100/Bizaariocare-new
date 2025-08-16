@@ -1,0 +1,11 @@
+.empoering-section .doctor-slider ul.react-multi-carousel-dot-list {
+    bottom: -42px;
+} 
+.empoering-section .doctor-slider .react-multi-carousel-dot button{
+  background-color: rgb(209, 209, 209);
+  border-color: rgb(209, 209, 209);
+}
+.empoering-section .doctor-slider .react-multi-carousel-dot--active button{
+  background-color: #f86f03;
+  border-color: #f86f03;
+}
