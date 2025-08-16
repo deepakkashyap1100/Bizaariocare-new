@@ -39,7 +39,7 @@ const EmpoweringContent2 = () => {
                 containerClass=" carousel-container" 
                 itemClass="me-0 pe-4"   
                 arrows={false} 
-                showDots={true}
+                showDots={false}
                 infinite={true}  
                 renderDotsOutside={true} 
                 partialVisible={true}

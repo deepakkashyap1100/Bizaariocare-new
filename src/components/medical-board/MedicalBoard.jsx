@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CardiologyTabContent from './MedicalBoardCard1';
 import MedicalBoardCard2 from './MedicalBoardCard2';
+import MedicalBoardCard3 from './MedicalBoardCard3';
 
 
 const MedicalBoard = () => {
@@ -9,8 +10,9 @@ const [activeTab, setActiveTab] = useState('tab1');
 const renderContent = () => {
 switch (activeTab) {
   case 'tab1': return <div>
-    {/* <CardiologyTabContent /> */}
+
     <MedicalBoardCard2 />
+
   </div>;
 case 'tab2': return  <div> <MedicalBoardCard2 />  </div>;
 case 'tab3': return <div>  <MedicalBoardCard2 /> </div>;

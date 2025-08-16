@@ -44,3 +44,18 @@
   border-color: #f86f03;
 }
 
+ .slick-dots li.slick-active button:before{
+  /* background-color: #f86f03; */
+  color:#F86F03; ;
+  font-size: 14px;
+}
+ .slick-dots li button:before{
+ font-size: 14px;
+  color: rgb(204, 204, 204); ;
+}
+.slick-dots{
+  bottom: -30px;
+}
+.slick-slide{
+    padding-inline: 10px;
+}

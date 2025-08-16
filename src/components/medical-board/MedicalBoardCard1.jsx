@@ -40,7 +40,7 @@ return (
         return (
             <SwiperSlide style={{overflow: "hidden"}}>
                 <div className="cardiology-card" key={item.id}>
-                    <img src={item.image} alt="doctor" className=" mx-auto" />
+                    <img src={item.image} alt="doctor" className="img-fluid" />
                     <div className='d-flex justify-content-between pt-4'>
                         <div>
                             <h5 className="doc-name">{item.name}</h5>

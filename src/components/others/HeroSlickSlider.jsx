@@ -1,52 +1,26 @@
-
-import "../../assets/css/hero.css";
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import { sliderArray } from '../../Data/LocalData';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import "../../assets/css/hero.css";
-const Hero2 = () => {
-        const responsive = {
-  superLargeDesktop: {
-    breakpoint: { max: 4000, min: 3000 },
-    items: 1
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-      items: 1,
 
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 1
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1
-  }
-};
-return (
-<>
-        <section className="hero-section position-relative"> 
-             <div id='hero-slider' >
-               <Carousel
-                    removeArrowOnDeviceType={["tablet", "mobile"]}
-                    responsive={responsive}
-                                    // autoPlay={false}
-                                    // autoPlaySpeed={3000}
-                                    // transitionDuration={2000} 
-                                    //additionalTransfrom={-50 * 3}
-                                    //  pauseOnHover={false} 
-                                    containerClass=" p-0 " 
-                                    itemClass=""   
-                                    arrows={false}
-                                    
-                                    showDots={true}
-                                    infinite={true}  
-                                    renderDotsOutside={true} 
-                                  partialVisible={false}
-                                   centerMode={false}
-                                    >
-       
+const HeroSlickSlider = () => {
+ const settings = {
+    dots: true,                // show navigation dots
+    infinite: true,            // loop mode
+    speed: 2000,               // transition speed (1s)
+    slidesToShow: 1,           // show one slide
+    slidesToScroll: 1,         // scroll one at a time
+    fade: true,                // enable fade effect
+    autoplay: true,            // auto play
+    autoplaySpeed: 2500,       // 2s per slide
+    pauseOnHover: false,       // keep autoplay even if hovered
+    arrows: false              // hide prev/next arrows
+  };
+
+  return (
+    <div className=" mx-auto mt-10 hero-slick-slider">
+      <Slider {...settings}>
             {sliderArray.map((element)=> {
                 return(
                     <div key={element.id}> 
@@ -54,7 +28,7 @@ return (
                     <div className="container">
                         <div className="row">
                             <div className="col-md-8">
-                                <img className="img-fluid" src={element.sliderImage} alt="" />
+                                <img src={element.sliderImage} alt="" className="img-fluid" />
                                 <div className="hero-content">
                                     <h1 className="hero-title">{element.bannerTitle}</h1>
                                     <p className="hero-text">{element.dsc}</p>
@@ -84,12 +58,11 @@ return (
             )
             }
             )}
-               
-            </Carousel>
-             </div>
-    </section>
-</>
-)
-}
+      </Slider>
+    </div>
+  );
+};
 
-export default Hero2
+
+
+export default HeroSlickSlider

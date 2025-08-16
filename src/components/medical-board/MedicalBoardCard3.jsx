@@ -2,53 +2,45 @@ import React from 'react'
 import {dominicArr } from '../../Data/LocalData';
 import locationIcon from "../../assets/images/icons/location-pin-alt-1-svgrepo-com 1.png"
 import workIcon from "../../assets/images/icons/work.png"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
 import '../../assets/css/medical-board-partner-hospital.css'
-const MedicalBoardCard2 = () => {
-     const responsive = {
-        superLargeDesktop: {
-            breakpoint: { max: 4000, min: 3000 },
-            items: 3
-        },
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 3, 
-             partialVisibilityGutter: 20
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 767 },
-            items: 2
-        },
-        mobile: {
-            breakpoint: { max: 767, min: 0 },
-            items: 1,
-            // showDots:true
+const MedicalBoardCard3 = () => {
+     const settings = {
+    dots: true,
+    infinite: true,
+    speed: 600,
+    slidesToShow: 3.1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2500,
+    arrows: false,
+    // centerMode: true,
+         //  centerPadding: "70px",  
+    leftPadding:'40px',
+    responsive: [
+      {
+        breakpoint: 1024, // tablet
+        settings: {
+         slidesToShow: 3.3,
+        //   centerPadding: "20px",
         }
-    };
+      },
+      {
+        breakpoint: 768, // mobile
+        settings: {
+          slidesToShow: 1,
+        //   centerPadding: "20px",
+        }
+      }
+    ]
+  };
 
 return (
 <>
-        <Carousel
-            // removeArrowOnDeviceType={["tablet", "mobile"]}
-            removeDotsOnDeviceType={["tablet", "mobile"]}
-            showDots={false}
-            responsive={responsive}
-            // autoPlay={false}
-            // autoPlaySpeed={3000}
-            // transitionDuration={2000} 
-            // additionalTransfrom={-20}
-            // pauseOnHover={false} 
-            // centerMode={false}
-            
-            containerClass="" 
-            itemClass="me-0 pe-4"   
-            arrows={false}  
-            infinite={true}  
-            renderDotsOutside={true} 
-            partialVisible={true} 
-        >
+        <Slider {...settings}>
         {dominicArr.map((item) => {
         return ( 
                 <div className="cardiology-card" key={item.id}>
@@ -92,9 +84,9 @@ return (
          
             )
         })}
-            </Carousel>
+            </Slider>
 </>
 )
 }
 
-export default MedicalBoardCard2
+export default MedicalBoardCard3

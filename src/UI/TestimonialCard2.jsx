@@ -38,9 +38,9 @@ const TestimonialCard = () => {
       <>        
         <Carousel
             // removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
-            // autoPlay={false}
-            // autoPlaySpeed={3000}
-            // transitionDuration={2000} 
+            autoPlay={true}
+            autoPlaySpeed={3000}
+            transitionDuration={2000} 
             //additionalTransfrom={-50 * 3}
             //  pauseOnHover={false} 
             containerClass=" p-0" 

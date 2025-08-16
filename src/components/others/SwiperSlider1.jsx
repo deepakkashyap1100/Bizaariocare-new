@@ -5,26 +5,30 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 // import { Pagination } from 'react-bootstrap';
-import { A11y, Navigation, Scrollbar, Pagination, Autoplay} from 'swiper/modules';
+import { A11y, Navigation, Scrollbar, Pagination, Autoplay, EffectFade} from 'swiper/modules';
 import { sliderArray } from '../../Data/LocalData';
 
 const SwiperSlider1 = () => {
   return (
       <>
-   
+        <section className='position-relative hero-swiper'> 
           <Swiper
-        //         autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
+              EffectFade
+              effect={"fade"}
+              speed={2000}
+              loop={true}
+                autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
             // install Swiper modules
-            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade]}
             spaceBetween={0}
-            // slidesPerView={3}
+            slidesPerView={1}
             // navigation
-            pagination={{ clickable: false }}
+            pagination={{ clickable: true }}
             // scrollbar={{ draggable: false }}
-            onSwiper={(swiper) => console.log(swiper)}
+            // onSwiper={(swiper) => console.log(swiper)}
             //   onSlideChange={() =>{ }
         //        breakpoints={{
         //   769: {
@@ -76,7 +80,7 @@ const SwiperSlider1 = () => {
                           )}
         
               </Swiper>
-          
+        </section> 
       </>
   )
 }

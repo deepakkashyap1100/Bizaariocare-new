@@ -16,7 +16,7 @@ const InternationalTab1 = () => {
                                         <h3 className="fw-bold stats-value">20k</h3>
                                     </div>
                                     <div className='stats-img'>
-                                        <img src={doctorIcon1} alt="doctorIcon1" />
+                                        <img className='img-fluid' src={doctorIcon1} alt="doctorIcon1" />
                                     </div>
                                 </div> 
                             </div> 
@@ -31,7 +31,7 @@ const InternationalTab1 = () => {
                                         <h3 className="fw-bold stats-value">20k</h3>
                                     </div>
                                     <div className='stats-img'>
-                                        <img src={doctorIcon2} alt="doctorIcon1" />
+                                        <img className='img-fluid' src={doctorIcon2} alt="doctorIcon1" />
                                     </div>
                                 </div> 
                             </div> 
@@ -49,7 +49,7 @@ const InternationalTab1 = () => {
                                         <h3 className="fw-bold stats-value">20k</h3>
                                     </div>
                                     <div className='stats-img'>
-                                        <img src={doctorIcon3} alt="doctorIcon1" />
+                                        <img className='img-fluid' src={doctorIcon3} alt="doctorIcon1" />
                                     </div>
                                 </div> 
                             </div> 
